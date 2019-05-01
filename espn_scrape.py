@@ -4,8 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 import pandas as pd
+import re
 
 baseurl = "http://www.espn.com/mens-college-basketball/statistics/player/_/stat/"
+max_rank_tracked = 99
 
 class ESPNScraper():
     def __init__(self):
@@ -15,7 +17,7 @@ class ESPNScraper():
         self.soup = None
 
     # Gets links to various stats on a per-year basis. Run once per year/season.
-    def getAllLinks(self):
+    def getAllStatLinks(self):
         all_links = self.soup.findAll("a", href=True)
         raw_links = []
         for link in all_links:
@@ -30,10 +32,57 @@ class ESPNScraper():
         return drop_down_values
 
     def scrape(self):
-        self.driver.get(baseurl)
-        self.soup = bs(self.driver.page_source, features="html5lib") # default parser is lxml, which works poorly
-        links = self.getAllLinks()
+
+        def buildTail(n):
+            return "/count/" + str(n+1)
+
+        self.reload(baseurl, resoup=True)
         years = self.getDropdownLinks()
+        dfs = []
+        for year_link in years:
+            curr_year = re.findall(r'[0-9]{4}', year_link)
+            curr_year = "2019" if curr_year == [] else curr_year[0]
+            print("Fetching data for year", curr_year)
+            self.reload(year_link, resoup=True)
+            stat_links = self.getAllStatLinks()
+            df = None
+            for i, stat_page in enumerate(stat_links): # ~1 min. per iteration
+                print("Fetching stat ({0}/{1}) from {2}...".format(i + 1, len(stat_links), stat_page))
+                players_read = 0
+                tail = ""
+                header = None
+                postseason_flag = None
+                while players_read < max_rank_tracked:
+                    self.reload(stat_page + tail, resoup=True)
+                    all_entries = self.soup.findAll("tr")
+                    table_entries = [entry for entry in all_entries if entry["class"][0] != "colhead"]
+                    if header is None: 
+                        header = [title.text for title in self.soup.find_all("tr", {"class": "colhead", "align": "right"})[0]] + ['YR', 'POST']
+                        df = pd.DataFrame(columns=header)
+                        print(header)
+                    if postseason_flag is None: postseason_flag = 0 if "seasontype/2" in stat_page else 1
+                    last_rank = 0
+                    for j, entry in enumerate(table_entries):
+                        row = [d.text for d in entry.findAll("td")]
+                        try:
+                            rank = int(row[0])
+                            last_rank = j + players_read + 1
+                        except ValueError:
+                            row[0] = last_rank # tied
+                        row += [curr_year, postseason_flag]
+                        df.loc[len(df),:] = row
+                        print(row)
+                    players_read += len(table_entries) # batch update at the end so tied rank behavior works properly
+                    tail = buildTail(players_read)
+                print(df.head(n=20))
+            dfs.append(df)
+            
+
+
+    def reload(self, url, resoup=False):
+        if not url.startswith("http:"): url = "http:" + url
+        self.driver.get(url)
+        if resoup: self.soup = bs(self.driver.page_source, features="html5lib") # default parser is lxml, which works poorly
 
 
 if __name__ == '__main__':
