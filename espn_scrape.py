@@ -59,7 +59,7 @@ class ESPNScraper():
                     if header is None: 
                         header = [title.text for title in self.soup.find_all("tr", {"class": "colhead", "align": "right"})[0]] + ['YR', 'POST']
                         df = pd.DataFrame(columns=header)
-                        print(header)
+                        # print(header)
                     if postseason_flag is None: postseason_flag = 0 if "seasontype/2" in stat_page else 1
                     last_rank = 0
                     for j, entry in enumerate(table_entries):
@@ -71,13 +71,11 @@ class ESPNScraper():
                             row[0] = last_rank # tied
                         row += [curr_year, postseason_flag]
                         df.loc[len(df),:] = row
-                        print(row)
+                        # print(row)
                     players_read += len(table_entries) # batch update at the end so tied rank behavior works properly
                     tail = buildTail(players_read)
-                print(df.head(n=20))
+                # print(df.head(n=20))
             dfs.append(df)
-            
-
 
     def reload(self, url, resoup=False):
         if not url.startswith("http:"): url = "http:" + url
