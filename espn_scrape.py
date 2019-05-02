@@ -8,12 +8,13 @@ import re
 
 baseurl = "http://www.espn.com/mens-college-basketball/statistics/player/_/stat/"
 max_rank_tracked = 99
+DATA_DIR = "./data/"
 
 class ESPNScraper():
     def __init__(self):
         chrome_options = Options()
         chrome_options.add_argument('--headless')
-        self.driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="./chromedriver")
+        self.driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="./lib/chromedriver")
         self.soup = None
 
     # Gets links to various stats on a per-year basis. Run once per year/season.
@@ -35,6 +36,12 @@ class ESPNScraper():
 
         def buildTail(n):
             return "/count/" + str(n+1)
+
+        def pickle_all(dflist):
+            print("Pickling", len(dflist), "dataframes")
+            for i, df in enumerate(dflist):
+                df.to_pickle(DATA_DIR + 'df_' + df.meta)
+            print(len(dflist), "dataframes pickled!")
 
         self.reload(baseurl, resoup=True)
         years = self.getDropdownLinks()
@@ -75,7 +82,9 @@ class ESPNScraper():
                     players_read += len(table_entries) # batch update at the end so tied rank behavior works properly
                     tail = buildTail(players_read)
                 # print(df.head(n=20))
-            dfs.append(df)
+                df.meta = '_'.join([curr_year, str(i)])
+                dfs.append(df)
+        pickle_all(dfs)
 
     def reload(self, url, resoup=False):
         if not url.startswith("http:"): url = "http:" + url
