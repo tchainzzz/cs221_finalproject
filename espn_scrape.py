@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 import pandas as pd
 import re
+from pathlib import Path
 
 baseurl = "http://www.espn.com/mens-college-basketball/statistics/player/_/stat/"
 max_rank_tracked = 99
@@ -45,7 +46,7 @@ class ESPNScraper():
 
         self.reload(baseurl, resoup=True)
         years = self.getDropdownLinks()
-        dfs = []
+        # dfs = []
         for year_link in years:
             curr_year = re.findall(r'[0-9]{4}', year_link)
             curr_year = "2019" if curr_year == [] else curr_year[0]
@@ -58,7 +59,12 @@ class ESPNScraper():
                 players_read = 0
                 tail = ""
                 header = None
-                postseason_flag = None
+                postseason_flag = 0 if "seasontype/2" in stat_page else 1
+                meta_name = '_'.join([curr_year, str(i), str(postseason_flag)])
+                path_attempt = Path(DATA_DIR + 'df_' + meta_name)
+                if path_attempt.is_file(): 
+                    print("Pickle", path_attempt, "already exists")
+                    continue
                 while players_read < max_rank_tracked:
                     self.reload(stat_page + tail, resoup=True)
                     all_entries = self.soup.findAll("tr")
@@ -67,7 +73,6 @@ class ESPNScraper():
                         header = [title.text for title in self.soup.find_all("tr", {"class": "colhead", "align": "right"})[0]] + ['YR', 'POST']
                         df = pd.DataFrame(columns=header)
                         # print(header)
-                    if postseason_flag is None: postseason_flag = 0 if "seasontype/2" in stat_page else 1
                     last_rank = 0
                     for j, entry in enumerate(table_entries):
                         row = [d.text for d in entry.findAll("td")]
@@ -81,10 +86,10 @@ class ESPNScraper():
                         # print(row)
                     players_read += len(table_entries) # batch update at the end so tied rank behavior works properly
                     tail = buildTail(players_read)
-                # print(df.head(n=20))
-                df.meta = '_'.join([curr_year, str(i)])
-                dfs.append(df)
-        pickle_all(dfs)
+                df.meta = '_'.join([curr_year, str(i), str(postseason_flag)])
+                df.to_pickle(DATA_DIR + 'df_' + df.meta)
+        # pickle_all(dfs)
+        self.driver.close()
 
     def reload(self, url, resoup=False):
         if not url.startswith("http:"): url = "http:" + url
