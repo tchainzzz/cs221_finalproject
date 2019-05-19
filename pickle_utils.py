@@ -26,3 +26,6 @@ def get_df_with_stat(stat, postseason=False):
     for year in range(2002, 2020):
         df_list.append(get_df(year, stat, postseason))
     return df_list
+
+# Other useful methods
+# df_pts['PLAYER'] = df_pts['PLAYER'].apply(lambda x: x.split(",")[0]) - remove player position from name field
