@@ -58,7 +58,7 @@ class ESPNDataManager():
         def drop_non_NBA(df, salaries):
             return df[df['PLAYER'].isin(salaries['player'])]
 
-        for key, df_list in df_dict.items():
+        for _, df_list in df_dict.items():
             for df in df_list:
                 df = drop_non_NBA(df, salaries)
         if save: 
@@ -67,13 +67,20 @@ class ESPNDataManager():
             f.close()
         return df_dict
 
+    def preview(self, df_dict):
+        for _, df_list in df_dict.items():
+            for df in df_list:
+                print(df.head())
+
 if __name__ == '__main__':
     print("Pulling all dataframes...")
     e = ESPNDataManager()
     df_dict = e.get_all_dfs(clean=True)
     print("Reading salaries")
     salaries = e.getSalaries()
-    print("Dropping all ")
+    print("Dropping all names ")
+    df_dict = e.drop_non_NBA_all(df_dict, salaries, save=True)
+    e.preview(df_dict)
 
 # df['player'] - column with player names 
 
