@@ -45,11 +45,13 @@ class ESPNDataManager():
         return stats
 
     def clean_up_names(self, df_dict):
-        for key, df_list in df_dict.items():
+        for _, df_list in df_dict.items():
             for df in df_list:
                 df = df_utils.removePositionsFromTable(df)
         return df_dict
 
+    def getSalaries(self):
+        return pd.read_csv('./data/NBASalaryData03-17.csv', engine='python')
         
     def drop_non_NBA_all(self, df_dict, salaries, save=False):
 
@@ -69,6 +71,9 @@ if __name__ == '__main__':
     print("Pulling all dataframes...")
     e = ESPNDataManager()
     df_dict = e.get_all_dfs(clean=True)
+    print("Reading salaries")
+    salaries = e.getSalaries()
+    print("Dropping all ")
 
 # df['player'] - column with player names 
 

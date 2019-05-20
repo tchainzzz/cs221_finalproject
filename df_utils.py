@@ -8,11 +8,10 @@ def removePositionsFromTable(df):
     df['PLAYER'] = df['PLAYER'].apply(removePositionFromName)
     return df
 
-def getSalaries():
-    return pd.read_csv('./data/NBASalaryData03-17.csv', engine='python')
 
 
-# This emits a SettingWithCopyWarning. I don't care at the moment, but I probably should.
+
+# This emits a SettingWithCopyWarning. I don't care at the moment, but I probably should. ONLY USED FOR BASELINE MODEL.
 def mergeCollegeNBA(college_df, salary_df):
     result = salary_df.copy()
     result['college_ppg'] = pd.Series(np.nan, index=result.index)
