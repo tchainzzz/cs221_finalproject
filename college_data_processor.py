@@ -109,11 +109,13 @@ class ESPNDataManager():
         if verbose: print("Merging players into single row...")
         return temp_dict
 
-    def horizMerge(self, df_dict, save=False):
+    def horizMerge(self, df_dict, save=False, csv=True):
         df_list = list(df_dict.values())
+        df = df_list[0].drop(columns=['RK', 'POST', 'YR'])
         for i in range(len(df_list) - 1):
-            df_list[i+1] = df_list[i].merge(df_list[i+1], on=['PLAYER', 'TEAM', 'GP'], how='outer')
-        return df_list[len(df_list) - 1]
+            df = df.merge(df_list[i+1].drop(columns=['RK', 'POST', 'YR']), on=['PLAYER', 'TEAM', 'GP'], how='outer')
+        df.to_csv('out.csv')
+        return df
 
     def preview(self, df_dict):
         for _, df_list in df_dict.items():
