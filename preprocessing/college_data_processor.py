@@ -83,7 +83,7 @@ class ESPNDataManager():
                 if 'MPG' in df: 
                     df['TOTAL_MINS'] = df['GP'].astype('float') * df['MPG'].astype('float')
                 df = df.sort_values(by=['PLAYER', 'TOTAL_MINS'], kind='mergesort').drop(columns=['TOTAL_MINS'])
-                df = df.drop_duplicates(subset=["PLAYER"], keep="last")
+                df = df.drop_duplicates(subset=["PLAYER"], keep="first")
                 longdf[stat_id] = df
             except KeyError as k:
                 print("WARNING: duplicate remove on DataFrame with key ", stat_id, "failed. Error message:", k)
