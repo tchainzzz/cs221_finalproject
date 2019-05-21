@@ -1,9 +1,14 @@
+## This merges all of the raw data into a dict of dataframes.
+
 import pandas as pd
 import df_utils
 import pickle
-stats = ['rebounds', 'field goals', 'free throws', '3 pointers' 'blocks', 'steals', 'assists', 'points per game', 'total points']
+import sys
+import argparse
+stats = ['rebounds', 'field goals', 'free throws', '3 pointers', 'blocks', 'steals', 'assists', 'points per game', 'total points']
 DATA_DIR = './data/'
-DF_DICT_NAME = 'df_dict_NBA_only.pkl'
+DF_DICT_NAME = 'df_dict_merged.pkl'
+DF_HORIZ_DICT_NAME = 'df_horiz_merged.pkl'
 
 # Class that manages the 
 class ESPNDataManager():
@@ -59,30 +64,88 @@ class ESPNDataManager():
             return df[df['PLAYER'].isin(salaries['player'])]
 
         for _, df_list in df_dict.items():
-            for df in df_list:
-                df = drop_non_NBA(df, salaries)
-        if save: 
-            f = open(DATA_DIR + DF_DICT_NAME, "wb")
-            pickle.dump(df_dict, f)
-            f.close()
+            for i, df in enumerate(df_list):
+                df_list[i] = drop_non_NBA(df, salaries)
+        if save: self.save(df_dict)
         return df_dict
+
+    # equivalent to running a vertical, column-wise concat on each list in the dict.
+    def dictToLongDataframe(self, df_dict, save=False):
+        for stat_id, df in df_dict.items():
+            df_dict[stat_id] = pd.concat(df)
+        if save: self.save(df_dict)
+        return df_dict
+    
+    def removeDuplicates(self, longdf, save=False):
+        for stat_id, df in longdf.items():
+            try:
+                df['TOTAL_MINS'] = df['GP'].astype('float')
+                if 'MPG' in df: 
+                    df['TOTAL_MINS'] = df['GP'].astype('float') * df['MPG'].astype('float')
+                df = df.sort_values(by=['PLAYER', 'TOTAL_MINS'], kind='mergesort').drop(columns=['TOTAL_MINS'])
+                df = df.drop_duplicates(subset=["PLAYER"], keep="last")
+                longdf[stat_id] = df
+            except KeyError as k:
+                print("WARNING: duplicate remove on DataFrame with key ", stat_id, "failed. Error message:", k)
+        if save: self.save(longdf)
+        return longdf
+
+    # equivalent to a horizontal, row-wise conditional merge.
+    def dictMerge(self, df_dict):
+        pass
+
+    def save(self, obj):
+        f = open(DATA_DIR + DF_DICT_NAME, "wb")
+        pickle.dump(obj, f)
+        f.close()
+
+    def fullVerticalMerge(self, df_dict, salaries, save=False, verbose=False):
+        if verbose: print("Dropping non-NBA players...")
+        temp_dict = self.drop_non_NBA_all(df_dict, salaries)
+        if verbose: print("Merging lists vertically...")
+        temp_dict = self.dictToLongDataframe(temp_dict)
+        if verbose: print("Removing duplicates...")
+        temp_dict = self.removeDuplicates(temp_dict, save)
+        if verbose: print("Merging players into single row...")
+        return temp_dict
+
+    def horizMerge(self, df_dict, save=False):
+        df_list = list(df_dict.values())
+        for i in range(len(df_list) - 1):
+            df_list[i+1] = df_list[i].merge(df_list[i+1], on=['PLAYER', 'TEAM', 'GP'], how='outer')
+        return df_list[len(df_list) - 1]
 
     def preview(self, df_dict):
         for _, df_list in df_dict.items():
-            for df in df_list:
-                print(df.head())
+            print(df_list.head(n=20))
+            print("Dimensions",df_list.shape)
+            print("\n")
 
 if __name__ == '__main__':
-    print("Pulling all dataframes...")
+    psr = argparse.ArgumentParser()
+    psr.add_argument("-v", "--verbose", help="suppress previewing all DataFrames", type=int, default=2)
+    args = psr.parse_args()
+    if args.verbose > 0: print("Pulling all dataframes...")
     e = ESPNDataManager()
     df_dict = e.get_all_dfs(clean=True)
-    print("Reading salaries")
+    if args.verbose > 0: print("Reading salaries...")
     salaries = e.getSalaries()
-    print("Dropping all names ")
-    df_dict = e.drop_non_NBA_all(df_dict, salaries, save=True)
-    e.preview(df_dict)
+    df_dict = e.fullVerticalMerge(df_dict, salaries, verbose=(args.verbose > 0))
+
+    f1 = open(DATA_DIR + DF_DICT_NAME, "wb")
+    pickle.dump(df_dict, f1)
+    f1.close()
+
+    big_df = e.horizMerge(df_dict)
+    f2 = open(DATA_DIR + DF_HORIZ_DICT_NAME, "wb")
+    pickle.dump(big_df, f2)
+    f2.close()
+
+    if args.verbose > 1: e.preview(df_dict)
+    print("Successfully stored", len(df_dict), "DataFrames.")
 
 # df['player'] - column with player names 
 
 # Other useful methods
 # df_pts['PLAYER'] = df_pts['PLAYER'].apply(lambda x: x.split(",")[0]) - remove player position from name field
+# df_dict[(stats[0], False)].head() - preview particular stat 
