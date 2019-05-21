@@ -56,7 +56,7 @@ class ESPNDataManager():
         return df_dict
 
     def getSalaries(self):
-        return pd.read_csv('./data/NBASalaryData03-17.csv', engine='python')
+        return pd.read_csv('../csv/NBASalaryData03-17.csv', engine='python')
         
     def drop_non_NBA_all(self, df_dict, salaries, save=False):
 
@@ -109,8 +109,8 @@ class ESPNDataManager():
         df_list = list(df_dict.values())
         df = df_list[0].drop(columns=['RK', 'POST', 'YR'])
         for i in range(len(df_list) - 1):
-            df = df.merge(df_list[i+1].drop(columns=['RK', 'POST', 'YR']), on=['PLAYER', 'TEAM', 'GP'], how='outer')
-        df.to_csv('./csv/out.csv')
+            df = df.merge(df_list[i+1].drop(columns=['RK', 'POST', 'YR']), on=['PLAYER', 'TEAM'], how='outer')
+        df.to_csv('../csv/out.csv')
         print("Horizontally merged dataframe stored in csv/out.csv.")
         return df
 
