@@ -114,7 +114,8 @@ class ESPNDataManager():
         df = df_list[0].drop(columns=['RK', 'POST', 'YR'])
         for i in range(len(df_list) - 1):
             df = df.merge(df_list[i+1].drop(columns=['RK', 'POST', 'YR']), on=['PLAYER', 'TEAM', 'GP'], how='outer')
-        df.to_csv('out.csv')
+        df.to_csv('./csv/out.csv')
+        print("Horizontally merged dataframe stored in csv/out.csv.")
         return df
 
     def preview(self, df_dict):
@@ -125,7 +126,7 @@ class ESPNDataManager():
 
 if __name__ == '__main__':
     psr = argparse.ArgumentParser()
-    psr.add_argument("-v", "--verbose", help="suppress previewing all DataFrames", type=int, default=2)
+    psr.add_argument("-v", "--verbose", help="suppress previewing all DataFrames", type=int, default=1)
     args = psr.parse_args()
     if args.verbose > 0: print("Pulling all dataframes...")
     e = ESPNDataManager()
