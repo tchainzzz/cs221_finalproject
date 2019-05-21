@@ -1,0 +1,830 @@
+,Team,Salary,Player,Position,Season,Percentile
+24,San Antonio Spurs,9900000.0,Steve Smith, SG,2002-2003,0.9049429659999999
+50,Memphis Grizzlies,7000000.0,Wesley Person, SF,2002-2003,0.80608365
+66,Chicago Bulls,5726000.0,Eddie Robinson, SF,2002-2003,0.7452471479999999
+101,Boston Celtics,5004000.0,Eric Williams, PF,2002-2003,0.6121673000000001
+126,Minnesota Timberwolves,3575000.0,Marc Jackson, PF,2002-2003,0.517110266
+128,Memphis Grizzlies,3425000.0,Jason Williams, PG,2002-2003,0.509505703
+151,Atlanta Hawks,2750000.0,Chris Crawford, SF,2002-2003,0.42205323200000006
+244,San Antonio Spurs,800000.0,Tony Parker, PG,2002-2003,0.068441065
+567,Utah Jazz,11260483.0,Carlos Boozer, PF,2005-2006,0.945
+635,Dallas Mavericks,5393300.0,Marquis Daniels, SG,2005-2006,0.775
+646,Miami Heat,5000000.0,Udonis Haslem, PF,2005-2006,0.7475
+672,Milwaukee Bucks,4750000.0,Dan Gadzuric, C,2005-2006,0.6825
+678,Golden State Warriors,4506261.0,Mike Dunleavy, SG,2005-2006,0.6675
+684,Milwaukee Bucks,4340520.0,Andrew Bogut, C,2005-2006,0.6525
+690,Cleveland Cavaliers,4065811.0,Drew Gooden, PF,2005-2006,0.6375
+691,Charlotte Bobcats,4020120.0,Emeka Okafor, C,2005-2006,0.635
+697,Atlanta Hawks,3883000.0,Marvin Williams, PF,2005-2006,0.62
+700,Denver Nuggets,3713640.0,Carmelo Anthony, PF,2005-2006,0.6125
+701,Philadelphia 76ers,3636364.0,Kyle Korver, SG,2005-2006,0.61
+702,Chicago Bulls,3610200.0,Ben Gordon, SG,2005-2006,0.6075
+709,Utah Jazz,3487440.0,Deron Williams, PG,2005-2006,0.59
+710,Toronto Raptors,3410000.0,Mike James, PG,2005-2006,0.5875
+715,Toronto Raptors,3348000.0,Chris Bosh, PF,2005-2006,0.575
+721,"NO/Oklahoma City
+ Hornets",3144240.0,Chris Paul, PG,2005-2006,0.56
+724,Miami Heat,3031920.0,Dwyane Wade, SG,2005-2006,0.5525
+726,Charlotte Bobcats,3000000.0,Kareem Rush, SG,2005-2006,0.5475
+731,Dallas Mavericks,2947440.0,Devin Harris, PG,2005-2006,0.535
+734,Charlotte Bobcats,2847360.0,Raymond Felton, PG,2005-2006,0.5275
+736,Seattle SuperSonics,2812239.0,Chris Wilcox, PF,2005-2006,0.5225
+737,Chicago Bulls,2800000.0,Chris Duhon, PG,2005-2006,0.52
+739,LA Clippers,2753760.0,Chris Kaman, C,2005-2006,0.515
+743,Atlanta Hawks,2677200.0,Josh Childress, F,2005-2006,0.505
+750,Chicago Bulls,2513880.0,Kirk Hinrich, SG,2005-2006,0.4875
+753,Portland Trail Blazers,2500000.0,Juan Dixon, SG,2005-2006,0.48
+754,Washington Wizards,2461617.0,Caron Butler, SF,2005-2006,0.4775
+755,Chicago Bulls,2443920.0,Luol Deng, SF,2005-2006,0.475
+756,Washington Wizards,2433824.0,Jared Jeffries, PF,2005-2006,0.4725
+757,Indiana Pacers,2420000.0,Anthony Johnson, PG,2005-2006,0.47
+758,Charlotte Bobcats,2401027.0,Melvin Ely, C,2005-2006,0.4675
+759,Phoenix Suns,2400000.0,James Jones, SG,2005-2006,0.465
+760,Toronto Raptors,2360880.0,Charlie Villanueva, PF,2005-2006,0.4625
+764,Milwaukee Bucks,2303040.0,T.J. Ford, PG,2005-2006,0.4525
+765,Boston Celtics,2255350.0,Dan Dickau, PG,2005-2006,0.45
+766,Toronto Raptors,2238960.0,Rafael Araujo, C,2005-2006,0.4475
+767,Chicago Bulls,2200000.0,Darius Songaila, PF,2005-2006,0.445
+769,New York Knicks,2162880.0,Channing Frye, F,2005-2006,0.44
+771,Philadelphia 76ers,2058000.0,Andre Iguodala, SG,2005-2006,0.435
+773,Washington Wizards,2011080.0,Jarvis Hayes, SF,2005-2006,0.43
+774,Toronto Raptors,2000000.0,Matt Bonner, C,2005-2006,0.4275
+779,Golden State Warriors,1988160.0,Ike Diogu, PF,2005-2006,0.415
+780,Cleveland Cavaliers,1955160.0,Luke Jackson, SF,2005-2006,0.4125
+785,Seattle SuperSonics,1815000.0,Nick Collison, F,2005-2006,0.4
+788,Detroit Pistons,1763115.0,Tayshaun Prince, SF,2005-2006,0.3925
+789,Seattle SuperSonics,1760000.0,Reggie Evans, C,2005-2006,0.39
+792,Minnesota Timberwolves,1724280.0,Marcus Banks, PG,2005-2006,0.3825
+794,Philadelphia 76ers,1699001.0,John Salmons, SF,2005-2006,0.3775
+802,Seattle SuperSonics,1638000.0,Luke Ridnour, PG,2005-2006,0.3575
+803,Charlotte Bobcats,1619280.0,Sean May, C,2005-2006,0.355
+805,Utah Jazz,1592400.0,Kris Humphries, PF,2005-2006,0.35
+806,Utah Jazz,1592400.0,Devin Brown, SG,2005-2006,0.3475
+809,Milwaukee Bucks,1556160.0,Reece Gaines, PG,2005-2006,0.34
+811,Minnesota Timberwolves,1538400.0,Rashad McCants, SG,2005-2006,0.335
+814,New Jersey Nets,1461360.0,Antoine Wright, SF,2005-2006,0.3275
+815,"NO/Oklahoma City
+ Hornets",1437240.0,Kirk Snyder, SG,2005-2006,0.325
+818,Toronto Raptors,1388400.0,Joey Graham, SF,2005-2006,0.3175
+819,"NO/Oklahoma City
+ Hornets",1334160.0,David West, F,2005-2006,0.315
+820,Indiana Pacers,1318920.0,Danny Granger, SF,2005-2006,0.3125
+821,"NO/Oklahoma City
+ Hornets",1300000.0,Rasual Butler, SF,2005-2006,0.31
+826,Memphis Grizzlies,1223160.0,Dahntay Jones, SG,2005-2006,0.2975
+827,Memphis Grizzlies,1196520.0,Hakim Warrick, PF,2005-2006,0.295
+828,Orlando Magic,1189200.0,Jameer Nelson, G,2005-2006,0.2925
+830,Denver Nuggets,1148760.0,Julius Hodge, SG,2005-2006,0.2875
+837,Utah Jazz,1125000.0,Keith McLeod, PG,2005-2006,0.27
+838,Los Angeles Lakers,1125000.0,Luke Walton, SF,2005-2006,0.2675
+839,New York Knicks,1102680.0,Nate Robinson, PG,2005-2006,0.265
+840,Miami Heat,1100000.0,Jason Kapono, SG,2005-2006,0.2625
+841,Charlotte Bobcats,1100000.0,Matt Carroll, SG,2005-2006,0.26
+845,Portland Trail Blazers,1058640.0,Jarrett Jack, G,2005-2006,0.25
+846,Los Angeles Lakers,1038960.0,Brian Cook, PF,2005-2006,0.2475
+851,Sacramento Kings,1016400.0,Francisco Garcia, SG,2005-2006,0.235
+852,Boston Celtics,1010040.0,Delonte West, SG,2005-2006,0.2325
+854,Atlanta Hawks,1000000.0,John Edwards, C,2005-2006,0.2275
+855,Portland Trail Blazers,1000000.0,Steve Blake, PG,2005-2006,0.225
+856,Houston Rockets,975600.0,Luther Head, PG,2005-2006,0.2225
+858,Boston Celtics,969600.0,Tony Allen, SG,2005-2006,0.2175
+860,Sacramento Kings,937440.0,Kevin Martin, SG,2005-2006,0.2125
+864,Dallas Mavericks,923880.0,Josh Howard, SF,2005-2006,0.2025
+866,Detroit Pistons,905640.0,Jason Maxiell, PF,2005-2006,0.1975
+870,Indiana Pacers,898200.0,David Harrison, C,2005-2006,0.1875
+871,Chicago Bulls,895248.0,Jannero Pargo, PG,2005-2006,0.185
+874,Denver Nuggets,879360.0,Linas Kleiza, SF,2005-2006,0.1775
+875,Charlotte Bobcats,869373.0,Keith Bogans, SG,2005-2006,0.175
+876,Miami Heat,867720.0,Wayne Simien, PF,2005-2006,0.1725
+878,New York Knicks,861360.0,David Lee, PF,2005-2006,0.1675
+892,Charlotte Bobcats,745248.0,Lonny Baxter, PF,2005-2006,0.1325
+902,Minnesota Timberwolves,719373.0,Ronald Dupree, SF,2005-2006,0.1075
+906,Atlanta Hawks,675000.0,Salim Stoudamire, SG,2005-2006,0.0975
+909,Atlanta Hawks,641748.0,Royal Ivey, PG,2005-2006,0.09
+910,Washington Wizards,641748.0,Awvee Storey, SF,2005-2006,0.0875
+913,Memphis Grizzlies,641748.0,Antonio Burks, PG,2005-2006,0.08
+916,Toronto Raptors,641748.0,Pape Sow, PF,2005-2006,0.0725
+917,Miami Heat,641748.0,Earl Barron, C,2005-2006,0.07
+919,Philadelphia 76ers,627251.0,Matt Barnes, SF,2005-2006,0.065
+920,LA Clippers,625000.0,James Singleton, F,2005-2006,0.0625
+922,LA Clippers,450000.0,Daniel Ewing, PG,2005-2006,0.0575
+924,Boston Celtics,428762.0,Ryan Gomes, SF,2005-2006,0.0525
+925,Golden State Warriors,423762.0,Chris Taft, PF,2005-2006,0.05
+927,Memphis Grizzlies,398762.0,Anthony Roberson, SG,2005-2006,0.045
+928,"NO/Oklahoma City
+ Hornets",398762.0,Brandon Bass, PF,2005-2006,0.0425
+929,Charlotte Bobcats,398762.0,Alan Anderson, SG,2005-2006,0.04
+930,Detroit Pistons,398762.0,Alex Acker, G,2005-2006,0.0375
+931,Detroit Pistons,398762.0,Amir Johnson, C,2005-2006,0.035
+933,Boston Celtics,398762.0,Orien Greene, PG,2005-2006,0.03
+934,Sacramento Kings,398762.0,Ronnie Price, PG,2005-2006,0.0275
+935,Dallas Mavericks,398762.0,Rawle Marshall, SF,2005-2006,0.025
+936,Charlotte Bobcats,398762.0,Kevin Burleson, PG,2005-2006,0.0225
+937,Orlando Magic,398762.0,Travis Diener, PG,2005-2006,0.02
+940,Chicago Bulls,398762.0,Eddie Basden, SG,2005-2006,0.0125
+942,Phoenix Suns,398762.0,Dijon Thompson, SF,2005-2006,0.0075
+944,Washington Wizards,398672.0,Donell Taylor, PG,2005-2006,0.0025
+945,Houston Rockets,248118.0,Chuck Hayes, PF,2005-2006,0.0
+1089,Golden State Warriors,4171200.0,Kevin Durant, SF,2006-2007,0.6521739129999999
+1093,Portland Trail Blazers,4027320.0,LaMarcus Aldridge, PF,2006-2007,0.642512077
+1109,Charlotte Bobcats,3616680.0,Adam Morrison, SF,2006-2007,0.603864734
+1120,Chicago Bulls,3260760.0,Tyrus Thomas, PF,2006-2007,0.577294686
+1131,Washington Wizards,3058200.0,Jeff Green, SF,2006-2007,0.5507246379999999
+1137,Atlanta Hawks,2952840.0,Shelden Williams, C,2006-2007,0.536231884
+1144,Philadelphia 76ers,2800000.0,Willie Green, SG,2006-2007,0.519323671
+1150,Seattle SuperSonics,2700000.0,Damien Wilkins, SG,2006-2007,0.504830918
+1152,Portland Trail Blazers,2681880.0,Brandon Roy, SG,2006-2007,0.5
+1160,Oklahoma City Thunder,2535720.0,Corey Brewer, F,2006-2007,0.48067632899999996
+1167,Minnesota Timberwolves,2448240.0,Randy Foye, SG,2006-2007,0.463768116
+1173,Memphis Grizzlies,2242920.0,Rudy Gay, SF,2006-2007,0.449275362
+1183,Golden State Warriors,2061720.0,Patrick O'Bryant, C,2006-2007,0.42512077299999995
+1197,Orlando Magic,1860720.0,JJ Redick, SG,2006-2007,0.39130434799999997
+1207,NO/Oklahoma City Hornets,1767600.0,Hilton Armstrong, PF,2006-2007,0.367149758
+1223,Utah Jazz,1595400.0,Ronnie Brewer, SF,2006-2007,0.328502415
+1225,Indiana Pacers,1569600.0,Rodney Stuckey, PG,2006-2007,0.323671498
+1228,Minnesota Timberwolves,1529873.0,Justin Reed, SF,2006-2007,0.31642512100000003
+1229,NO/Oklahoma City Hornets,1515480.0,Cedric Simmons, SF,2006-2007,0.31400966199999997
+1234,Philadelphia 76ers,1439760.0,Rodney Carney, SG,2006-2007,0.301932367
+1239,Indiana Pacers,1367760.0,Shawne Williams, SF,2006-2007,0.289855072
+1246,Sacramento Kings,1240920.0,Quincy Douby, SG,2006-2007,0.27294686
+1248,Washington Wizards,1233840.0,Jason Smith, PF,2006-2007,0.268115942
+1250,New York Knicks,1191240.0,Renaldo Balkman, SF,2006-2007,0.263285024
+1257,Boston Celtics,1143600.0,Rajon Rondo, PG,2006-2007,0.246376812
+1259,New Jersey Nets,1097880.0,Marcus Williams, PG,2006-2007,0.24154589399999998
+1264,New Jersey Nets,1053960.0,Josh Boone, C,2006-2007,0.229468599
+1268,Memphis Grizzlies,1011720.0,Kyle Lowry, PG,2006-2007,0.21980676300000002
+1273,Philadelphia 76ers,1000000.0,Shavlik Randolph, PF,2006-2007,0.20772946899999997
+1277,Cleveland Cavaliers,971280.0,Shannon Brown, PG,2006-2007,0.19806763300000002
+1281,Orlando Magic,944520.0,Arron Afflalo, G,2006-2007,0.18840579699999999
+1282,Los Angeles Lakers,939120.0,Jordan Farmar, PG,2006-2007,0.185990338
+1286,Dallas Mavericks,906480.0,Maurice Ager, SF,2006-2007,0.176328502
+1287,New York Knicks,899880.0,Mardy Collins, PG,2006-2007,0.17391304300000002
+1293,Golden State Warriors,798112.0,Dajuan Wagner, SG,2006-2007,0.15942029
+1294,Denver Nuggets,774551.0,Jamal Sampson, C,2006-2007,0.15700483099999998
+1297,LA Clippers,771331.0,Quinton Ross, SF,2006-2007,0.149758454
+1299,New York Knicks,750000.0,Randolph Morris, C,2006-2007,0.144927536
+1301,Chicago Bulls,744551.0,Andre Barrett, SG,2006-2007,0.140096618
+1310,Houston Rockets,700000.0,John Lucas III, PG,2006-2007,0.11835748800000001
+1312,Atlanta Hawks,675000.0,Solomon Jones, PF,2006-2007,0.11352657
+1315,Los Angeles Lakers,664209.0,Ronny Turiaf, C,2006-2007,0.10628019300000001
+1321,Memphis Grizzlies,664209.0,Lawrence Roberts, PF,2006-2007,0.09178744
+1324,Utah Jazz,625000.0,Paul Millsap, PF,2006-2007,0.08454106300000001
+1326,Houston Rockets,600000.0,Steve Novak, SF,2006-2007,0.079710145
+1329,Boston Celtics,432000.0,Leon Powe, PF,2006-2007,0.072463768
+1330,Denver Nuggets,427163.0,Taurean Green, PG,2006-2007,0.070048309
+1331,Dallas Mavericks,427163.0,Josh McRoberts, PF,2006-2007,0.06763285
+1334,Charlotte Bobcats,412718.0,Ryan Hollins, C,2006-2007,0.060386472999999996
+1335,Miami Heat,412718.0,Robert Hite, SG,2006-2007,0.057971014
+1336,Detroit Pistons,412718.0,Will Blalock, SG,2006-2007,0.055555556
+1337,New Jersey Nets,412718.0,Hassan Adams, SF,2006-2007,0.053140097000000004
+1339,Orlando Magic,412718.0,James Augustine, PF,2006-2007,0.048309179
+1340,Dallas Mavericks,412718.0,Pops Mensah-Bonsu, PF,2006-2007,0.04589372
+1341,Philadelphia 76ers,412718.0,Bobby Jones, SF,2006-2007,0.043478261
+1342,Philadelphia 76ers,412718.0,Steven Smith, SF,2006-2007,0.041062802
+1344,Seattle SuperSonics,406340.0,Andre Brown, PF,2006-2007,0.036231884
+1345,San Antonio Spurs,405435.0,James White, SG,2006-2007,0.033816425
+1348,Milwaukee Bucks,302200.0,Jared Reiner, C,2006-2007,0.026570048
+1349,Golden State Warriors,259770.0,Kelenna Azubuike, SF,2006-2007,0.024154589
+1350,Sacramento Kings,252486.0,Justin Williams, PF,2006-2007,0.02173913
+1353,Washington Wizards,121388.0,Mike Hall, F,2006-2007,0.014492753999999998
+1355,Utah Jazz,101966.0,Lou Amundson, PF,2006-2007,0.009661836
+1357,Memphis Grizzlies,55839.0,Will Conroy, PG,2006-2007,0.004830918
+1496,Portland Trail Blazers,4662000.0,Greg Oden, C,2007-2008,0.6722488040000001
+1525,Atlanta Hawks,3745800.0,Al Horford, C,2007-2008,0.602870813
+1536,Memphis Grizzlies,3377160.0,Mike Conley, PG,2007-2008,0.576555024
+1590,Golden State Warriors,2323080.0,Brandan Wright, F,2007-2008,0.447368421
+1597,Orlando Magic,2208960.0,D.J. Augustin, PG,2007-2008,0.43062201
+1600,Chicago Bulls,2135400.0,Joakim Noah, C,2007-2008,0.42344497600000003
+1604,Sacramento Kings,2028600.0,Spencer Hawes, PF,2007-2008,0.41387559799999996
+1630,New Orleans Hornets,1739160.0,Julian Wright, SF,2007-2008,0.351674641
+1634,LA Clippers,1652280.0,Al Thornton, SF,2007-2008,0.342105263
+1646,Washington Wizards,1491240.0,Nick Young, G,2007-2008,0.313397129
+1649,New Jersey Nets,1416600.0,Sean Williams, PF,2007-2008,0.306220096
+1654,Memphis Grizzlies,1285200.0,Javaris Crittenton, PG,2007-2008,0.294258373
+1665,Miami Heat,1184400.0,Daequan Cook, SG,2007-2008,0.267942584
+1668,Charlotte Bobcats,1137000.0,Jared Dudley, SF,2007-2008,0.26076555
+1674,New York Knicks,1091640.0,Wilson Chandler, SF,2007-2008,0.24641148300000001
+1683,Utah Jazz,1005960.0,Morris Almond, SG,2007-2008,0.22488038300000002
+1689,Houston Rockets,972720.0,Aaron Brooks, G,2007-2008,0.21052631600000002
+1694,Phoenix Suns,931920.0,Alando Tucker, SF,2007-2008,0.198564593
+1704,LA Clippers,800000.0,Josh Powell, PF,2007-2008,0.174641148
+1713,Memphis Grizzlies,770610.0,Casey Jacobsen, SG,2007-2008,0.153110048
+1721,Minnesota Timberwolves,687456.0,Craig Smith, PF,2007-2008,0.133971292
+1725,LA Clippers,687456.0,Paul Davis, C,2007-2008,0.124401914
+1726,Los Angeles Lakers,687456.0,Devin Green, SG,2007-2008,0.122009569
+1728,Boston Celtics,650000.0,Gabe Pruitt, PG,2007-2008,0.11722488
+1736,Boston Celtics,427163.0,Glen Davis, PF,2007-2008,0.09808612400000001
+1737,Chicago Bulls,427163.0,JamesOn Curry, PG,2007-2008,0.09569378
+1739,Los Angeles Lakers,427163.0,Coby Karl, PG,2007-2008,0.090909091
+1741,Washington Wizards,427163.0,Dominic McGuire, PF,2007-2008,0.08612440199999999
+1742,Cleveland Cavaliers,427163.0,Demetris Nichols, SF,2007-2008,0.083732057
+1743,Milwaukee Bucks,427163.0,Ramon Sessions, G,2007-2008,0.081339713
+1744,null Unknown,427163.0,Larry Turner, NA,2007-2008,0.078947368
+1745,null Unknown,427163.0,Elton Brown, NA,2007-2008,0.076555024
+1746,Minnesota Timberwolves,427163.0,Chris Richard, PF,2007-2008,0.07416267900000001
+1747,Boston Celtics,427163.0,Brandon Wallace, NA,2007-2008,0.071770335
+1751,Indiana Pacers,319116.0,Courtney Sims, C,2007-2008,0.062200957
+1752,San Antonio Spurs,278912.0,Keith Langford, SG,2007-2008,0.059808612000000004
+1753,Golden State Warriors,251272.0,C.J. Watson, PG,2007-2008,0.057416268
+1764,LA Clippers,125636.0,Nick Fazekas, PF,2007-2008,0.031100477999999997
+1766,Houston Rockets,100509.0,Mike Harris, SF,2007-2008,0.026315789
+1768,Cleveland Cavaliers,87945.0,Lance Allred, C,2007-2008,0.021531099999999997
+1769,Miami Heat,67844.0,Blake Ahearn, G,2007-2008,0.019138756
+1770,Miami Heat,67844.0,Stephane Lasme, PF,2007-2008,0.016746411
+1773,Miami Heat,36395.0,Kasib Powell, SF,2007-2008,0.009569378
+1925,Chicago Bulls,4822800.0,Derrick Rose, PG,2008-2009,0.636363636
+1940,Miami Heat,4314960.0,Michael Beasley, SF,2008-2009,0.5995086
+1953,Memphis Grizzlies,3875040.0,O.J. Mayo, SG,2008-2009,0.567567568
+1960,Cleveland Cavaliers,3700000.0,Daniel Gibson, SG,2008-2009,0.55036855
+1968,San Antonio Spurs,3500000.0,Roger Mason Jr., SG,2008-2009,0.530712531
+1970,Oklahoma City Thunder,3493680.0,Russell Westbrook, PG,2008-2009,0.525798526
+1982,Minnesota Timberwolves,3163680.0,Kevin Love, PF,2008-2009,0.496314496
+1988,Houston Rockets,3000000.0,Carl Landry, PF,2008-2009,0.481572482
+2002,LA Clippers,2623200.0,Eric Gordon, SG,2008-2009,0.44717444700000003
+2013,Milwaukee Bucks,2403120.0,Joe Alexander, SF,2008-2009,0.42014742
+2025,New Jersey Nets,2098560.0,Brook Lopez, C,2008-2009,0.390663391
+2033,Portland Trail Blazers,1993560.0,Jerryd Bayless, PG,2008-2009,0.37100737100000003
+2044,Sacramento Kings,1893840.0,Jason Thompson, PF,2008-2009,0.343980344
+2050,Indiana Pacers,1799160.0,Brandon Rush, SG,2008-2009,0.329238329
+2055,Golden State Warriors,1709280.0,Anthony Randolph, SF,2008-2009,0.316953317
+2061,Phoenix Suns,1623720.0,Robin Lopez, C,2008-2009,0.302211302
+2067,Philadelphia 76ers,1542600.0,Marreese Speights, F,2008-2009,0.287469287
+2070,Dallas Mavericks,1500000.0,J.J. Barea, PG,2008-2009,0.28009828
+2071,Indiana Pacers,1465440.0,Roy Hibbert, C,2008-2009,0.277641278
+2076,Washington Wizards,1392240.0,JaVale McGee, C,2008-2009,0.265356265
+2079,Cleveland Cavaliers,1329480.0,JJ Hickson, C,2008-2009,0.257985258
+2090,New Jersey Nets,1225200.0,Ryan Anderson, PF,2008-2009,0.230958231
+2095,Utah Jazz,1176240.0,Kosta Koufos, C,2008-2009,0.21867321899999997
+2096,Orlando Magic,1176240.0,Courtney Lee, SG,2008-2009,0.21621621600000002
+2108,San Antonio Spurs,1006200.0,George Hill, PG,2008-2009,0.186732187
+2113,Memphis Grizzlies,977160.0,Darrell Arthur, F,2008-2009,0.17444717399999998
+2115,Miami Heat,972581.0,Chris Quinn, PG,2008-2009,0.16953317
+2116,Oklahoma City Thunder,964080.0,D.J. White, PF,2008-2009,0.167076167
+2117,Boston Celtics,957120.0,J.R. Giddens, SG,2008-2009,0.164619165
+2129,Houston Rockets,816500.0,Joey Dorsey, PF,2008-2009,0.135135135
+2131,Sacramento Kings,809300.0,Donte Greene, SF,2008-2009,0.13022113
+2132,Oklahoma City Thunder,806452.0,Kyle Weaver, SG,2008-2009,0.127764128
+2142,Milwaukee Bucks,757000.0,Luc Mbah a Moute, PF,2008-2009,0.10319410300000001
+2145,Atlanta Hawks,711517.0,Thomas Gardner, SG,2008-2009,0.095823096
+2151,Chicago Bulls,711517.0,Aaron Gray, C,2008-2009,0.081081081
+2152,Detroit Pistons,711517.0,Will Bynum, PG,2008-2009,0.078624079
+2153,Miami Heat,700000.0,Mario Chalmers, G,2008-2009,0.076167076
+2160,LA Clippers,550000.0,DeAndre Jordan, C,2008-2009,0.058968059
+2161,Boston Celtics,542114.0,Henry Walker, SF,2008-2009,0.056511057
+2163,LA Clippers,500000.0,Mike Taylor, PG,2008-2009,0.051597052000000004
+2166,Cleveland Cavaliers,450000.0,Darnell Jackson, PF,2008-2009,0.044226044000000006
+2167,Denver Nuggets,442114.0,Sonny Weems, SG,2008-2009,0.041769042
+2168,Oklahoma City Thunder,442114.0,Steven Hill, C,2008-2009,0.039312039
+2169,Golden State Warriors,442114.0,Anthony Morrow, SG,2008-2009,0.036855037
+2170,Detroit Pistons,442114.0,Walter Sharpe, PF,2008-2009,0.034398034
+2171,New York Knicks,442114.0,Joe Crawford, SG,2008-2009,0.031941032
+2172,null Unknown,442114.0,Taj McCullough, NA,2008-2009,0.029484029
+2174,Sacramento Kings,442114.0,Bobby Brown, PG,2008-2009,0.024570025
+2175,null Unknown,442114.0,Jamaal Tatum, NA,2008-2009,0.022113022000000003
+2176,Atlanta Hawks,442114.0,Othello Hunter, SF,2008-2009,0.01965602
+2177,Golden State Warriors,422725.0,Jermareo Davidson, PF,2008-2009,0.017199017
+2178,San Antonio Spurs,299077.0,Malik Hairston, SG,2008-2009,0.014742015
+2181,Charlotte Bobcats,93624.0,Dontell Jefferson, SG,2008-2009,0.007371007
+2182,Charlotte Bobcats,52014.0,Cartier Martin, PF,2008-2009,0.004914005
+2183,Cleveland Cavaliers,46917.0,Trey Johnson, SG,2008-2009,0.0024570020000000002
+2326,Detroit Pistons,4983480.0,Blake Griffin, PF,2009-2010,0.661904762
+2340,Memphis Grizzlies,4458840.0,Hasheem Thabeet, C,2009-2010,0.628571429
+2351,Oklahoma City Thunder,4004160.0,James Harden, PG,2009-2010,0.6023809520000001
+2370,Sacramento Kings,3610080.0,Tyreke Evans, SG,2009-2010,0.557142857
+2394,Minnesota Timberwolves,2969280.0,Jonny Flynn, PG,2009-2010,0.5
+2406,Golden State Warriors,2710560.0,Stephen Curry, PG,2009-2010,0.471428571
+2413,New York Knicks,2483280.0,Jordan Hill, C,2009-2010,0.454761905
+2421,Toronto Raptors,2282640.0,DeMar DeRozan, SG,2009-2010,0.435714286
+2435,New Jersey Nets,2060040.0,Terrence Williams, SG,2009-2010,0.402380952
+2446,Charlotte Bobcats,1957080.0,Gerald Henderson, SG,2009-2010,0.376190476
+2451,Indiana Pacers,1859160.0,Tyler Hansbrough, PF,2009-2010,0.364285714
+2456,Phoenix Suns,1766280.0,Earl Clark, SF,2009-2010,0.352380952
+2460,Detroit Pistons,1677840.0,Austin Daye, SF,2009-2010,0.342857143
+2468,Chicago Bulls,1594080.0,James Johnson, PF,2009-2010,0.32380952399999996
+2473,Philadelphia 76ers,1514280.0,Jrue Holiday, PG,2009-2010,0.311904762
+2477,Denver Nuggets,1438680.0,Ty Lawson, G,2009-2010,0.302380952
+2480,Atlanta Hawks,1373880.0,Jeff Teague, PG,2009-2010,0.295238095
+2484,Utah Jazz,1318920.0,Eric Maynor, PG,2009-2010,0.28571428600000004
+2488,New Orleans Hornets,1266120.0,Darren Collison, PG,2009-2010,0.276190476
+2496,Oklahoma City Thunder,1120200.0,Byron Mullens, C,2009-2010,0.257142857
+2507,Chicago Bulls,1039800.0,Taj Gibson, PF,2009-2010,0.230952381
+2513,Memphis Grizzlies,1009680.0,DeMarre Carroll, SF,2009-2010,0.21666666699999998
+2514,Minnesota Timberwolves,1003560.0,Wayne Ellington, SG,2009-2010,0.214285714
+2517,New York Knicks,996240.0,Toney Douglas, PG,2009-2010,0.20714285699999999
+2532,San Antonio Spurs,850000.0,DeJuan Blair, C,2009-2010,0.171428571
+2545,Memphis Grizzlies,824200.0,Sam Young, SF,2009-2010,0.14047619
+2559,Houston Rockets,725000.0,Chase Budinger, SF,2009-2010,0.107142857
+2560,Houston Rockets,725000.0,Jermaine Taylor, SG,2009-2010,0.104761905
+2563,Philadelphia 76ers,650000.0,Jodie Meeks, SG,2009-2010,0.09761904800000001
+2564,Golden State Warriors,632455.0,Chris Hunter, C,2009-2010,0.095238095
+2567,Detroit Pistons,457588.0,DaJuan Summers, SF,2009-2010,0.088095238
+2568,Portland Trail Blazers,457588.0,Dante Cunningham, SF,2009-2010,0.085714286
+2569,Portland Trail Blazers,457588.0,Patty Mills, PG,2009-2010,0.083333333
+2570,Memphis Grizzlies,457588.0,Derrick Byars, SF,2009-2010,0.08095238099999999
+2571,Phoenix Suns,457588.0,Taylor Griffin, PF,2009-2010,0.078571429
+2572,Memphis Grizzlies,457588.0,Trey Gilder, SF,2009-2010,0.076190476
+2573,Sacramento Kings,457588.0,Jon Brockman, PF,2009-2010,0.073809524
+2574,Utah Jazz,457588.0,Wesley Matthews, SG,2009-2010,0.071428571
+2575,Atlanta Hawks,451595.0,Mario West, SG,2009-2010,0.069047619
+2576,Portland Trail Blazers,427316.0,Anthony Tolliver, PF,2009-2010,0.066666667
+2578,Utah Jazz,269169.0,Sundiata Gaines, PG,2009-2010,0.061904762
+2583,Golden State Warriors,118435.0,Reggie Williams, SF,2009-2010,0.05
+2584,Utah Jazz,113051.0,Othyus Jeffers, SG,2009-2010,0.047619048
+2587,San Antonio Spurs,88826.0,Garrett Temple, SG,2009-2010,0.04047619
+2588,null Unknown,75476.0,Kenny Hasbrouck, NA,2009-2010,0.038095238
+2591,null Unknown,59217.0,Curtis Jerrells, NA,2009-2010,0.030952381
+2594,Washington Wizards,45759.0,Alonzo Gee, SF,2009-2010,0.023809524
+2596,Oklahoma City Thunder,40375.0,Mustafa Shakur, PG,2009-2010,0.019047619
+2597,Washington Wizards,40375.0,Cedric Jackson, G,2009-2010,0.016666667
+2598,Miami Heat,29135.0,Alexander Johnson, SF,2009-2010,0.014285714
+2599,Boston Celtics,25991.0,Rob Kurz, SF,2009-2010,0.011904762
+2601,Utah Jazz,10767.0,Brian Butch, C,2009-2010,0.007142857
+2602,Portland Trail Blazers,5383.0,Greg Stiemsma, C,2009-2010,0.004761905
+2603,Memphis Grizzlies,2692.0,Tony Gaffney, SF,2009-2010,0.002380952
+2604,Boston Celtics,2692.0,Oliver Lafayette, G,2009-2010,0.0
+2740,Washington Wizards,5144280.0,John Wall, PG,2010-2011,0.6957494409999999
+2753,Philadelphia 76ers,4602720.0,Evan Turner, SG,2010-2011,0.666666667
+2769,Utah Jazz,4133280.0,Derrick Favors, PF,2010-2011,0.630872483
+2783,Minnesota Timberwolves,3726600.0,Wesley Johnson, SF,2010-2011,0.599552573
+2796,Sacramento Kings,3374640.0,DeMarcus Cousins, C,2010-2011,0.5704697989999999
+2798,Miami Heat,3300000.0,Joel Anthony, PF,2010-2011,0.565995526
+2807,Golden State Warriors,3065040.0,Ekpe Udoh, C,2010-2011,0.5458612979999999
+2822,Detroit Pistons,2798040.0,Greg Monroe, C,2010-2011,0.512304251
+2827,LA Clippers,2563320.0,Al-Farouq Aminu, PF,2010-2011,0.501118568
+2837,Utah Jazz,2356320.0,Gordon Hayward, SF,2010-2011,0.478747204
+2844,Indiana Pacers,2238360.0,Paul George, SF,2010-2011,0.46308724799999995
+2854,Oklahoma City Thunder,2126520.0,Cole Aldrich, C,2010-2011,0.440715884
+2861,Memphis Grizzlies,2020200.0,Xavier Henry, SG,2010-2011,0.42505592799999997
+2869,Toronto Raptors,1919160.0,Ed Davis, PF,2010-2011,0.40715883700000005
+2872,Houston Rockets,1823280.0,Patrick Patterson, PF,2010-2011,0.400447427
+2879,Milwaukee Bucks,1731960.0,Larry Sanders, PF,2010-2011,0.384787472
+2884,Portland Trail Blazers,1645440.0,Luke Babbitt, F,2010-2011,0.37360179
+2894,LA Clippers,1485000.0,Eric Bledsoe, PG,2010-2011,0.351230425
+2897,Boston Celtics,1418160.0,Avery Bradley, SG,2010-2011,0.344519016
+2902,San Antonio Spurs,1361400.0,James Anderson, SG,2010-2011,0.333333333
+2909,Philadelphia 76ers,1306920.0,Craig Brackins, PF,2010-2011,0.317673378
+2911,Golden State Warriors,1254720.0,Elliot Williams, SG,2010-2011,0.313199105
+2914,Washington Wizards,1204560.0,Trevor Booker, F,2010-2011,0.30648769600000003
+2919,New Jersey Nets,1156320.0,Damion James, SF,2010-2011,0.29530201300000003
+2925,Dallas Mavericks,1110120.0,Dominique Jones, SG,2010-2011,0.281879195
+2930,New Orleans Hornets,1073280.0,Quincy Pondexter, SF,2010-2011,0.27069351199999997
+2933,Washington Wizards,1042320.0,Jordan Crawford, G,2010-2011,0.263982103
+2934,Memphis Grizzlies,1035960.0,Greivis Vasquez, PG,2010-2011,0.261744966
+2937,Cleveland Cavaliers,1029389.0,Jawad Williams, SF,2010-2011,0.25503355699999997
+2939,Washington Wizards,1028400.0,Daniel Orton, C,2010-2011,0.250559284
+2941,Minnesota Timberwolves,1020960.0,Lazar Hayward, SF,2010-2011,0.24608501100000002
+2954,San Antonio Spurs,855189.0,Marcus Haislip, F,2010-2011,0.217002237
+2957,Golden State Warriors,855189.0,Tarence Kinsey, SG,2010-2011,0.210290828
+2976,Charlotte Bobcats,762195.0,Derrick Brown, SF,2010-2011,0.167785235
+2978,New Orleans Pelicans,762195.0,Darryl Watkins, C,2010-2011,0.163310962
+2985,Indiana Pacers,750000.0,Lance Stephenson, SG,2010-2011,0.147651007
+2990,Sacramento Kings,730437.0,Hassan Whiteside, C,2010-2011,0.136465324
+2994,Toronto Raptors,670000.0,Solomon Alabi, C,2010-2011,0.127516779
+2999,New York Knicks,600000.0,Andy Rautins, SG,2010-2011,0.116331096
+3001,San Antonio Spurs,525000.0,Gary Neal, PG,2010-2011,0.11185682300000001
+3003,Washington Wizards,515603.0,Lester Hudson, SG,2010-2011,0.10738255
+3004,LA Clippers,500000.0,Willie Warren, SG,2010-2011,0.105145414
+3005,Cleveland Cavaliers,500000.0,Samardo Samuels, PF,2010-2011,0.10290827699999999
+3007,LA Clippers,473604.0,Patrick Beverley, PG,2010-2011,0.098434004
+3008,Phoenix Suns,473604.0,Gani Lawal, PF,2010-2011,0.096196868
+3010,Charlotte Bobcats,473604.0,Sherron Collins, PG,2010-2011,0.091722595
+3011,New York Knicks,473604.0,Landry Fields, SG,2010-2011,0.089485459
+3012,Memphis Grizzlies,473604.0,Ish Smith, PG,2010-2011,0.08724832199999999
+3013,Denver Nuggets,473604.0,Gary Forbes, F,2010-2011,0.085011186
+3015,Utah Jazz,473604.0,Jeremy Evans, F,2010-2011,0.080536913
+3016,Miami Heat,473604.0,Dexter Pittman, C,2010-2011,0.078299776
+3018,null Unknown,457588.0,Deron Washington, NA,2010-2011,0.073825503
+3032,Phoenix Suns,186656.0,Zabian Dowdell, PG,2010-2011,0.042505593
+3034,Golden State Warriors,133723.0,Jeff Adrien, SF,2010-2011,0.03803132
+3036,San Antonio Spurs,130022.0,Danny Green, SG,2010-2011,0.033557047
+3037,null Unknown,125000.0,Da'Sean Butler, NA,2010-2011,0.031319911
+3039,Portland Trail Blazers,88363.0,Chris Johnson, C,2010-2011,0.026845637999999998
+3043,New Orleans Hornets,25073.0,Patrick Ewing Jr., SF,2010-2011,0.017897092
+3044,Utah Jazz,25000.0,Marcus Cousin, C,2010-2011,0.015659955
+3045,Washington Wizards,22287.0,Larry Owens, SF,2010-2011,0.013422818999999999
+3047,Houston Rockets,15000.0,Marqus Blakely, SF,2010-2011,0.008948546
+3048,San Antonio Spurs,13930.0,Robert Vaden, SG,2010-2011,0.006711409000000001
+3051,null Unknown,8358.0,Magnum Rolle, NA,2010-2011,0.0
+3158,Sacramento Kings,7525000.0,Marcus Thornton, SG,2011-2012,0.78340081
+3186,Cleveland Cavaliers,5144280.0,Kyrie Irving, PG,2011-2012,0.726720648
+3201,Minnesota Timberwolves,4602720.0,Derrick Williams, PF,2011-2012,0.696356275
+3231,Cleveland Cavaliers,3726600.0,Tristan Thompson, C,2011-2012,0.63562753
+3283,Detroit Pistons,2563320.0,Brandon Knight, PG,2011-2012,0.5303643720000001
+3293,Charlotte Bobcats,2356320.0,Kemba Walker, PG,2011-2012,0.510121457
+3295,Sacramento Kings,2339040.0,Jimmer Fredette, G,2011-2012,0.506072874
+3312,Golden State Warriors,2126520.0,Klay Thompson, SG,2011-2012,0.471659919
+3313,Utah Jazz,2111160.0,Alec Burks, SG,2011-2012,0.46963562799999997
+3320,Phoenix Suns,2005560.0,Markieff Morris, PF,2011-2012,0.455465587
+3333,Houston Rockets,1823280.0,Marcus Morris, PF,2011-2012,0.42914979799999997
+3334,San Antonio Spurs,1809840.0,Kawhi Leonard, SF,2011-2012,0.427125506
+3336,Philadelphia 76ers,1719480.0,Nikola Vucevic, C,2011-2012,0.423076923
+3345,New York Knicks,1563120.0,Iman Shumpert, SG,2011-2012,0.4048583
+3352,Washington Wizards,1485000.0,Chris Singleton, SF,2011-2012,0.390688259
+3356,Milwaukee Bucks,1418160.0,Tobias Harris, SF,2011-2012,0.382591093
+3361,Portland Trail Blazers,1365720.0,Nolan Smith, PG,2011-2012,0.372469636
+3371,Denver Nuggets,1254720.0,Kenneth Faried, PF,2011-2012,0.352226721
+3380,Oklahoma City Thunder,1156320.0,Reggie Jackson, PG,2011-2012,0.334008097
+3384,Denver Nuggets,1121520.0,Jordan Hamilton, SG,2011-2012,0.325910931
+3392,Miami Heat,1082520.0,Norris Cole, PG,2011-2012,0.309716599
+3396,New Jersey Nets,1063865.0,MarShon Brooks, SG,2011-2012,0.301619433
+3399,Boston Celtics,1042320.0,JaJuan Johnson, PF,2011-2012,0.295546559
+3403,Chicago Bulls,1020960.0,Jimmy Butler, SG,2011-2012,0.287449393
+3404,Memphis Grizzlies,1000000.0,Jeremy Pargo, PG,2011-2012,0.285425101
+3429,Houston Rockets,850000.0,Chandler Parsons, SF,2011-2012,0.23481781399999999
+3440,Sacramento Kings,809875.0,Tyler Honeycutt, SF,2011-2012,0.212550607
+3450,Perth Perth,788872.0,Terrico White, G,2011-2012,0.192307692
+3456,Washington Wizards,762195.0,Hamady Ndiaye, C,2011-2012,0.18016194300000002
+3461,Flamengo Flamengo,762195.0,Derrick Caracter, PF,2011-2012,0.17004048600000002
+3468,Chicago Bulls,736420.0,DeMarcus Nelson, SG,2011-2012,0.155870445
+3478,LA Clippers,535000.0,Trey Thompkins, PF,2011-2012,0.13562753
+3482,LA Clippers,500000.0,Travis Leslie, PG,2011-2012,0.127530364
+3484,Oklahoma City Thunder,475000.0,Ryan Reid, PF,2011-2012,0.123481781
+3485,Sacramento Kings,473604.0,Pooh Jeter, PG,2011-2012,0.12145749
+3486,Golden State Warriors,473604.0,Charles Jenkins, PG,2011-2012,0.119433198
+3487,Washington Wizards,473604.0,Shelvin Mack, PG,2011-2012,0.11740890699999999
+3488,Philadelphia 76ers,473604.0,Lavoy Allen, F,2011-2012,0.115384615
+3489,New York Knicks,473604.0,Josh Harrellson, C,2011-2012,0.113360324
+3490,Charlotte Bobcats,473604.0,Cory Higgins, PG,2011-2012,0.11133603199999999
+3492,Golden State Warriors,473604.0,Chris Wright, SF,2011-2012,0.10728744900000001
+3493,Milwaukee Bucks,473604.0,Jon Leuer, PF,2011-2012,0.10526315800000001
+3495,Milwaukee Bucks,457588.0,Marcus Landry, SF,2011-2012,0.101214575
+3502,Detroit Pistons,374300.0,Walker Russell, PG,2011-2012,0.087044534
+3508,Cleveland Cavaliers,252016.0,Manny Harris, PG,2011-2012,0.074898785
+3522,Toronto Raptors,190548.0,Ben Uzoh, PG,2011-2012,0.046558704000000006
+3523,Cleveland Cavaliers,160414.0,Donald Sloan, G,2011-2012,0.044534412999999995
+3524,LA Clippers,156595.0,Courtney Fortson, PG,2011-2012,0.042510121
+3526,Miami Heat,137498.0,Mickell Gladness, C,2011-2012,0.038461537999999997
+3528,Portland Trail Blazers,104494.0,Armon Johnson, PG,2011-2012,0.034412955
+3534,New Orleans Hornets,64930.0,Jerome Dyson, PG,2011-2012,0.022267206
+3535,Houston Rockets,57291.0,Diamon Simpson, SF,2011-2012,0.020242915
+3540,New Orleans Hornets,38194.0,Jeff Foote, C,2011-2012,0.010121457
+3542,Cleveland Cavaliers,22916.0,D.J. Kennedy, SG,2011-2012,0.006072874
+3545,Philadelphia 76ers,11458.0,Xavier Silas, G,2011-2012,0.0
+3618,Houston Rockets,8374646.0,Jeremy Lin, PG,2012-2013,0.86252354
+3675,New Orleans Hornets,5144280.0,Anthony Davis, PF,2012-2013,0.755178908
+3686,Charlotte Bobcats,4809840.0,Michael Kidd-Gilchrist, SF,2012-2013,0.734463277
+3690,Indiana Pacers,4763760.0,Victor Oladipo, SG,2012-2013,0.72693032
+3699,Washington Wizards,4319280.0,Bradley Beal, SG,2012-2013,0.709981168
+3702,Washington Wizards,4278000.0,Otto Porter Jr., SF,2012-2013,0.70433145
+3723,Charlotte Hornets,3857040.0,Cody Zeller, C,2012-2013,0.664783427
+3726,Cleveland Cavaliers,3726600.0,Dion Waiters, SG,2012-2013,0.65913371
+3738,Sacramento Kings,3374640.0,Thomas Robinson, F,2012-2013,0.63653484
+3755,Portland Trail Blazers,3065040.0,Damian Lillard, PG,2012-2013,0.604519774
+3773,Golden State Warriors,2798040.0,Harrison Barnes, SF,2012-2013,0.570621469
+3788,Toronto Raptors,2563320.0,Terrence Ross, SG,2012-2013,0.542372881
+3796,Detroit Pistons,2356320.0,Andre Drummond, C,2012-2013,0.527306968
+3805,New Orleans Hornets,2238360.0,Austin Rivers, PG,2012-2013,0.510357815
+3812,Oklahoma City Thunder,2111160.0,Jeremy Lamb, SG,2012-2013,0.49717514100000004
+3824,Phoenix Suns,2005560.0,Kendall Marshall, PG,2012-2013,0.474576271
+3832,Milwaukee Bucks,1823280.0,John Henson, F,2012-2013,0.45951035799999995
+3835,Orlando Magic,1809840.0,Maurice Harkless, SF,2012-2013,0.45386064
+3842,Houston Rockets,1645440.0,Royce White, PF,2012-2013,0.44067796600000003
+3848,Cleveland Cavaliers,1563120.0,Tyler Zeller, C,2012-2013,0.429378531
+3851,Indiana Pacers,1500000.0,Jeff Ayres, F,2012-2013,0.423728814
+3855,Houston Rockets,1485000.0,Terrence Jones, PF,2012-2013,0.416195857
+3856,Orlando Magic,1482000.0,Andrew Nicholson, PF,2012-2013,0.41431261799999997
+3860,Milwaukee Bucks,1409040.0,Tony Snell, SG,2012-2013,0.406779661
+3873,Boston Celtics,1306920.0,Jared Sullinger, C,2012-2013,0.38229755200000004
+3881,Atlanta Hawks,1204560.0,John Jenkins, G,2012-2013,0.36723163799999997
+3887,Dallas Mavericks,1156320.0,Jared Cunningham, SG,2012-2013,0.35593220299999995
+3888,Detroit Pistons,1149000.0,Reggie Bullock, SG,2012-2013,0.35404896399999997
+3893,Oklahoma City Thunder,1110840.0,Andre Roberson, SG,2012-2013,0.344632768
+3894,Memphis Grizzlies,1110120.0,Tony Wroten, SG,2012-2013,0.342749529
+3899,Oklahoma City Thunder,1082520.0,Perry Jones, SF,2012-2013,0.333333333
+3900,Chicago Bulls,1074720.0,Marquis Teague, G,2012-2013,0.331450094
+3906,Cleveland Cavaliers,1054389.0,Luke Harangody, PF,2012-2013,0.320150659
+3908,Philadelphia 76ers,1042320.0,Arnett Moultrie, PF,2012-2013,0.31638418100000004
+3911,Golden State Warriors,1020960.0,Festus Ezeli, C,2012-2013,0.310734463
+3912,Detroit Pistons,1000000.0,Kyle Singler, F,2012-2013,0.308851224
+3927,Oklahoma City Thunder,884293.0,DeAndre Liggins, G,2012-2013,0.280602637
+3931,Orlando Magic,884293.0,E'Twaun Moore, G,2012-2013,0.27306968
+3937,Memphis Grizzlies,854389.0,Josh Davis, SF,2012-2013,0.261770245
+3947,Golden State Warriors,850000.0,Draymond Green, PF,2012-2013,0.242937853
+3963,Miami Heat,788872.0,Jarvis Varnado, PF,2012-2013,0.212806026
+3967,Charlotte Bobcats,788872.0,Jeffery Taylor, SF,2012-2013,0.20527307
+3968,Philadelphia 76ers,788872.0,Maalik Wayns, PG,2012-2013,0.20338983100000002
+3976,Philadelphia 76ers,762195.0,Justin Harper, PF,2012-2013,0.18832391699999998
+3985,New Orleans Pelicans,762195.0,Jerome Jordan, C,2012-2013,0.171374765
+3995,Toronto Raptors,665000.0,Quincy Acy, F,2012-2013,0.152542373
+3998,Dallas Mavericks,600491.0,Jae Crowder, PF,2012-2013,0.146892655
+3999,Dallas Mavericks,582995.0,Chris Douglas-Roberts, SG,2012-2013,0.145009416
+4000,Indiana Pacers,550000.0,Orlando Johnson, SG,2012-2013,0.143126177
+4001,Portland Trail Blazers,550000.0,Will Barton, SG,2012-2013,0.141242938
+4007,Washington Wizards,490180.0,Glen Rice Jr., SG,2012-2013,0.12994350300000002
+4008,Boston Celtics,490180.0,Erik Jay Murphy, PF,2012-2013,0.128060264
+4010,New York Knicks,473604.0,John Shurna, SF,2012-2013,0.124293785
+4011,Philadelphia 76ers,473604.0,Hollis Thompson, SF,2012-2013,0.122410546
+4013,null Unknown,473604.0,Stanley Robinson, NA,2012-2013,0.118644068
+4014,Dallas Mavericks,473604.0,Josh Akognon, PG,2012-2013,0.11676082900000001
+4016,New Orleans Hornets,473604.0,Brian Roberts, PG,2012-2013,0.11299435
+4018,Phoenix Suns,473604.0,Diante Garrett, PG,2012-2013,0.10922787199999999
+4019,Indiana Pacers,473604.0,Luke Nevill, C,2012-2013,0.10734463300000001
+4022,Boston Celtics,473604.0,Jamar Smith, SG,2012-2013,0.101694915
+4023,Golden State Warriors,473604.0,Kent Bazemore, SG,2012-2013,0.099811676
+4028,Cleveland Cavaliers,390027.0,Kevin Jones, PF,2012-2013,0.09039548
+4038,San Antonio Spurs,239588.0,Aron Baynes, C,2012-2013,0.07156308900000001
+4056,Miami Heat,94154.0,Terrel Harris, SG,2012-2013,0.037664783
+4067,Philadelphia 76ers,47360.0,Justin Holiday, SF,2012-2013,0.016949153
+4068,Utah Jazz,44835.0,Jerel McNeal, SG,2012-2013,0.015065913
+4072,Brooklyn Nets,27859.0,Kris Joseph, SF,2012-2013,0.007532957
+4073,New Orleans Hornets,27859.0,Henry Sims, C,2012-2013,0.005649718000000001
+4167,Cleveland Cavaliers,5324280.0,Anthony Bennett, PF,2013-2014,0.763636364
+4238,Phoenix Suns,3492720.0,Alex Len, C,2013-2014,0.579220779
+4254,Oklahoma City Thunder,3172320.0,Nerlens Noel, PF,2013-2014,0.537662338
+4264,Indiana Pacers,3000000.0,Chris Copeland, SF,2013-2014,0.511688312
+4267,Sacramento Kings,2895960.0,Ben McLemore, SG,2013-2014,0.503896104
+4274,Detroit Pistons,2653080.0,Kentavious Caldwell-Pope, SG,2013-2014,0.485714286
+4285,Utah Jazz,2438760.0,Trey Burke, PG,2013-2014,0.457142857
+4289,Portland Trail Blazers,2316720.0,CJ McCollum, SG,2013-2014,0.446753247
+4294,Philadelphia 76ers,2200920.0,Michael Carter-Williams, PG,2013-2014,0.433766234
+4300,Oklahoma City Thunder,2090880.0,Steven Adams, C,2013-2014,0.418181818
+4307,Boston Celtics,1986360.0,Kelly Olynyk, PF,2013-2014,0.4
+4311,Minnesota Timberwolves,1887120.0,Shabazz Muhammad, F,2013-2014,0.38961039
+4329,Dallas Mavericks,1536960.0,Shane Larkin, G,2013-2014,0.342857143
+4343,Cleveland Cavaliers,1388400.0,Scotty Hopson, G,2013-2014,0.306493506
+4347,Minnesota Timberwolves,1352640.0,Gorgui Dieng, C,2013-2014,0.29610389600000003
+4350,Brooklyn Nets,1298640.0,Mason Plumlee, PF,2013-2014,0.288311688
+4354,Indiana Pacers,1246680.0,Solomon Hill, SF,2013-2014,0.277922078
+4358,New York Knicks,1196760.0,Tim Hardaway Jr., G,2013-2014,0.267532468
+4373,Phoenix Suns,1064400.0,Archie Goodwin, SG,2013-2014,0.228571429
+4395,Portland Trail Blazers,825000.0,Allen Crabbe, SG,2013-2014,0.171428571
+4397,Milwaukee Bucks,788872.0,Khris Middleton, SF,2013-2014,0.166233766
+4400,Denver Nuggets,788872.0,Quincy Miller, SF,2013-2014,0.158441558
+4406,Utah Jazz,702233.0,Malcolm Thomas, PF,2013-2014,0.14285714300000002
+4413,Houston Rockets,570515.0,Isaiah Canaan, PG,2013-2014,0.124675325
+4417,Memphis Grizzlies,535000.0,Jamaal Franklin, SG,2013-2014,0.11428571400000001
+4418,Sacramento Kings,524616.0,Ray McCallum, PG,2013-2014,0.111688312
+4419,Cleveland Cavaliers,510000.0,Carrick Felix, SG,2013-2014,0.109090909
+4420,Milwaukee Bucks,500000.0,Nate Wolters, PG,2013-2014,0.106493506
+4421,Detroit Pistons,500000.0,Tony Mitchell, PF,2013-2014,0.103896104
+4422,Houston Rockets,490180.0,Robert Covington, SF,2013-2014,0.10129870099999999
+4423,Memphis Grizzlies,490180.0,Nick Calathes, SG,2013-2014,0.098701299
+4425,Philadelphia 76ers,490180.0,Brandon Davies, PF,2013-2014,0.09350649400000001
+4426,Charlotte Bobcats,490180.0,James Southerland, SF,2013-2014,0.090909091
+4427,Los Angeles Lakers,490180.0,Ryan Kelly, PF,2013-2014,0.08831168800000001
+4428,Phoenix Suns,490180.0,Dionte Christmas, SG,2013-2014,0.085714286
+4436,Philadelphia 76ers,300000.0,Dewayne Dedmon, C,2013-2014,0.064935065
+4444,Atlanta Hawks,138404.0,Mike Muscala, PF,2013-2014,0.04415584400000001
+4447,Charlotte Bobcats,98036.0,Justin Hamilton, C,2013-2014,0.036363636
+4448,Boston Celtics,77852.0,Chris Babb, SG,2013-2014,0.033766234
+4452,Brooklyn Nets,54785.0,Jorge Gutierrez, PG,2013-2014,0.023376623
+4458,Houston Rockets,15605.0,Greg Smith, PF,2013-2014,0.007792208
+4552,Phoenix Suns,5700000.0,PJ Tucker, SF,2014-2015,0.790804598
+4556,Minnesota Timberwolves,5510640.0,Andrew Wiggins, SF,2014-2015,0.781609195
+4566,Phoenix Suns,7238606.0,Isaiah Thomas, PG,2014-2015,0.75862069
+4594,Milwaukee Bucks,4930560.0,Jabari Parker, PF,2014-2015,0.694252874
+4609,Philadelphia 76ers,4427640.0,Joel Embiid, C,2014-2015,0.659770115
+4621,Orlando Magic,3992040.0,Aaron Gordon, PF,2014-2015,0.632183908
+4642,Atlanta Hawks,3333333.0,Mike Scott, PF,2014-2015,0.583908046
+4647,Boston Celtics,3283320.0,Marcus Smart, PG,2014-2015,0.572413793
+4668,Los Angeles Lakers,2997360.0,Julius Randle, PF,2014-2015,0.5241379310000001
+4679,Sacramento Kings,2745840.0,Nik Stauskas, SG,2014-2015,0.498850575
+4687,Charlotte Hornets,2524200.0,Noah Vonleh, PF,2014-2015,0.48045977
+4693,Orlando Magic,2397840.0,Elfrid Payton, PG,2014-2015,0.46666666700000003
+4697,Chicago Bulls,2277960.0,Doug McDermott, SF,2014-2015,0.457471264
+4724,Minnesota Timberwolves,1855320.0,Adreian Payne, PF,2014-2015,0.395402299
+4736,Boston Celtics,1674480.0,James Young, G,2014-2015,0.36781609200000004
+4741,Phoenix Suns,1590720.0,Tyler Ennis, G,2014-2015,0.356321839
+4744,Denver Nuggets,1519200.0,Gary Harris, SG,2014-2015,0.34942528700000003
+4757,Oklahoma City Thunder,1400040.0,Mitch McGary, PF,2014-2015,0.31954023
+4760,Memphis Grizzlies,1344120.0,Jordan Adams, SG,2014-2015,0.312643678
+4766,Utah Jazz,1290360.0,Rodney Hood, SG,2014-2015,0.298850575
+4771,Miami Heat,1238640.0,Shabazz Napier, PG,2014-2015,0.287356322
+4780,Charlotte Hornets,1149720.0,P.J. Hairston, SF,2014-2015,0.26666666699999997
+4790,LA Clippers,1109760.0,CJ Wilcox, G,2014-2015,0.243678161
+4793,San Antonio Spurs,1093680.0,Kyle Anderson, SF,2014-2015,0.23678160899999998
+4817,Orlando Magic,884879.0,Devyn Marble, SF,2014-2015,0.181609195
+4818,Philadelphia 76ers,884879.0,Jerami Grant, SF,2014-2015,0.179310345
+4819,Cleveland Cavaliers,884879.0,Joe Harris, SF,2014-2015,0.177011494
+4820,Minnesota Timberwolves,880000.0,Robbie Hummel, SF,2014-2015,0.17471264399999997
+4826,Melbourne United,816482.0,Casper Ware, G,2014-2015,0.16091954
+4838,Memphis Grizzlies,725000.0,Jarnell Stokes, F,2014-2015,0.133333333
+4841,Brooklyn Nets,702756.0,Darius Morris, G,2014-2015,0.126436782
+4844,New Orleans Pelicans,633974.0,Gal Mekel, PG,2014-2015,0.11954023
+4845,Milwaukee Bucks,600000.0,Johnny O'Bryant III, PF,2014-2015,0.117241379
+4846,Brooklyn Nets,507336.0,Cory Jefferson, F,2014-2015,0.114942529
+4847,Orlando Magic,507336.0,Keith Appling, PG,2014-2015,0.11264367800000001
+4848,Utah Jazz,507336.0,Eric Griffin, C,2014-2015,0.110344828
+4850,Memphis Grizzlies,507336.0,Russ Smith, PG,2014-2015,0.105747126
+4851,Sacramento Kings,507336.0,Eric Moreland, C,2014-2015,0.10344827599999999
+4852,Sacramento Kings,507336.0,Sim Bhullar, C,2014-2015,0.101149425
+4855,New Orleans Pelicans,507336.0,Patric Young, PF,2014-2015,0.094252874
+4856,Cleveland Cavaliers,495399.0,Will Cherry, F,2014-2015,0.09195402300000001
+4857,Memphis Grizzlies,486446.0,Kalin Lucas, G,2014-2015,0.08965517199999999
+4858,Philadelphia 76ers,468540.0,Drew Gordon, C,2014-2015,0.08735632199999999
+4863,Utah Jazz,379010.0,Patrick Christopher, SG,2014-2015,0.075862069
+4864,Toronto Raptors,373041.0,Ronald Roberts Jr., PF,2014-2015,0.073563218
+4867,Minnesota Timberwolves,283367.0,Lorenzo Brown, PG,2014-2015,0.066666667
+4870,Utah Jazz,241731.0,Elijah Millsap, SG,2014-2015,0.059770115
+4871,Dallas Mavericks,236886.0,Bernard James, C,2014-2015,0.057471264
+4872,New York Knicks,235762.0,Langston Galloway, SG,2014-2015,0.055172414
+4873,Miami Heat,199950.0,Tyler Johnson, SG,2014-2015,0.052873563
+4878,Golden State Warriors,167122.0,James Michael McAdoo, SF,2014-2015,0.04137931
+4880,Memphis Grizzlies,134295.0,JaMychal Green, PF,2014-2015,0.036781609
+4885,Washington Wizards,96056.0,Toure' Murry, SF,2014-2015,0.025287356
+4886,Utah Jazz,92514.0,Bryce Cotton, G,2014-2015,0.022988506000000002
+4887,Los Angeles Lakers,59686.0,Jabari Brown, SG,2014-2015,0.020689655
+4888,Utah Jazz,59686.0,Jack Cooley, F,2014-2015,0.018390805
+4889,Portland Trail Blazers,59686.0,Tim Frazier, PG,2014-2015,0.016091954
+4891,Phoenix Suns,53838.0,A.J. Price, PG,2014-2015,0.011494253000000001
+4893,Phoenix Suns,48028.0,Seth Curry, SG,2014-2015,0.006896551999999999
+4895,Miami Heat,29843.0,Andre Dawkins, SG,2014-2015,0.002298851
+4896,Sacramento Kings,29483.0,David Stockton, G,2014-2015,0.0
+4994,Minnesota Timberwolves,5703600.0,Karl-Anthony Towns, C,2015-2016,0.773672055
+5031,Los Angeles Lakers,5103120.0,D'Angelo Russell, PG,2015-2016,0.688221709
+5043,Philadelphia 76ers,4582680.0,Jahlil Okafor, C,2015-2016,0.660508083
+5072,New York Knicks,3750000.0,Kyle O'Quinn, C,2015-2016,0.5935334870000001
+5082,Sacramento Kings,3398280.0,Willie Cauley-Stein, C,2015-2016,0.5704387989999999
+5089,Houston Rockets,3189794.0,KJ McDaniels, F,2015-2016,0.554272517
+5111,Detroit Pistons,2841960.0,Stanley Johnson, SF,2015-2016,0.5034642029999999
+5122,Charlotte Hornets,2612520.0,Frank Kaminsky, PF,2015-2016,0.478060046
+5129,Miami Heat,2481720.0,Justise Winslow, SF,2015-2016,0.461893764
+5134,Indiana Pacers,2357760.0,Myles Turner, C,2015-2016,0.45034642
+5139,Utah Jazz,2239800.0,Trey Lyles, PF,2015-2016,0.438799076
+5157,Oklahoma City Thunder,2021520.0,Cameron Payne, PG,2015-2016,0.39722863700000005
+5166,Boston Celtics,1824360.0,Terry Rozier, PG,2015-2016,0.376443418
+5174,Houston Rockets,1646400.0,Sam Dekker, SF,2015-2016,0.35796766700000004
+5179,New York Knicks,1572360.0,Jerian Grant, PG,2015-2016,0.346420323
+5182,Toronto Raptors,1509360.0,Delon Wright, PG,2015-2016,0.33949191700000003
+5189,Dallas Mavericks,1449000.0,Justin Anderson, SG,2015-2016,0.323325635
+5192,Chicago Bulls,1391160.0,Bobby Portis, PF,2015-2016,0.316397229
+5196,Brooklyn Nets,1335480.0,Rondae Hollis-Jefferson, SF,2015-2016,0.307159353
+5201,Minnesota Timberwolves,1282080.0,Tyus Jones, PG,2015-2016,0.295612009
+5202,Cleveland Cavaliers,1276000.0,Sasha Kaun, C,2015-2016,0.29330254
+5207,Memphis Grizzlies,1230840.0,Jarell Martin, PF,2015-2016,0.28175519600000004
+5214,Boston Celtics,1170960.0,Jordan Mickey, F,2015-2016,0.265588915
+5218,Los Angeles Lakers,1155600.0,Larry Nance Jr., PF,2015-2016,0.256351039
+5222,Cleveland Cavaliers,1147276.0,Matthew Dellavedova, PG,2015-2016,0.247113164
+5224,Oklahoma City Thunder,1140240.0,Josh Huestis, F,2015-2016,0.242494226
+5226,Golden State Warriors,1131960.0,Kevon Looney, SF,2015-2016,0.237875289
+5232,Indiana Pacers,1100000.0,Glenn Robinson III, SG,2015-2016,0.22401847600000002
+5233,Philadelphia 76ers,1074169.0,Richaun Holmes, PF,2015-2016,0.22170900699999999
+5238,Indiana Pacers,1007026.0,Rakeem Christmas, PF,2015-2016,0.210161663
+5239,Indiana Pacers,1007026.0,Joe Young, G,2015-2016,0.207852194
+5242,Houston Rockets,1000000.0,Montrezl Harrell, PF,2015-2016,0.20092378800000002
+5281,Los Angeles Lakers,700000.0,Anthony Brown, F,2015-2016,0.11085450300000001
+5282,Toronto Raptors,650000.0,Norman Powell, SF,2015-2016,0.108545035
+5283,Portland Trail Blazers,625093.0,Pat Connaughton, SG,2015-2016,0.10623556599999999
+5284,Detroit Pistons,600000.0,Darrun Hilliard, G,2015-2016,0.103926097
+5285,Washington Wizards,561716.0,Jarell Eddie, F,2015-2016,0.10161662800000001
+5286,Phoenix Suns,525093.0,Deonte Burton, PG,2015-2016,0.099307159
+5287,Phoenix Suns,525093.0,Kyle Casey, SF,2015-2016,0.096997691
+5288,Philadelphia 76ers,525093.0,T.J. McConnell, PG,2015-2016,0.09468822199999999
+5289,Philadelphia 76ers,525093.0,Scottie Wilbekin, PG,2015-2016,0.09237875300000001
+5290,Utah Jazz,525093.0,J.J. O'Brien, SF,2015-2016,0.090069284
+5291,Brooklyn Nets,525093.0,Treveon Graham, SG,2015-2016,0.087759815
+5292,Orlando Magic,525093.0,Melvin Ejim, SF,2015-2016,0.085450346
+5293,LA Clippers,525093.0,Branden Dawson, SF,2015-2016,0.083140878
+5295,Memphis Grizzlies,525093.0,Jarrid Famous, PF,2015-2016,0.07852194
+5296,Los Angeles Lakers,525093.0,Jamil Wilson, SF,2015-2016,0.07621247099999999
+5299,Atlanta Hawks,525093.0,Lamar Patterson, SG,2015-2016,0.069284065
+5314,Houston Rockets,200600.0,Andrew Goudelock, PG,2015-2016,0.034642032
+5318,Brooklyn Nets,134215.0,Sean Kilpatrick, G,2015-2016,0.025404157000000004
+5321,Phoenix Suns,111196.0,Jordan McRae, SG,2015-2016,0.018475751000000002
+5322,Utah Jazz,99418.0,Erick Green, PG,2015-2016,0.016166282
+5323,Phoenix Suns,83397.0,Alan Williams, PF,2015-2016,0.013856813
+5327,Phoenix Suns,55722.0,Phil Pressey, PG,2015-2016,0.0046189379999999995
+5396,Los Angeles Lakers,12500000.0,Jordan Clarkson, PG,2016-2017,0.854978355
+5421,Dallas Mavericks,8375000.0,Dwight Powell, PF,2016-2017,0.8008658009999999
+5475,Los Angeles Lakers,6191000.0,Tarik Black, C,2016-2017,0.6839826840000001
+5485,Philadelphia 76ers,5903160.0,Ben Simmons, PG,2016-2017,0.662337662
+5500,Los Angeles Lakers,5281680.0,Brandon Ingram, SF,2016-2017,0.62987013
+5535,Minnesota Timberwolves,3872520.0,Kris Dunn, PG,2016-2017,0.554112554
+5548,Sacramento Kings,3517200.0,Buddy Hield, SG,2016-2017,0.525974026
+5559,Denver Nuggets,3210840.0,Jamal Murray, PG,2016-2017,0.5021645020000001
+5570,Phoenix Suns,2941440.0,Marquese Chriss, PF,2016-2017,0.478354978
+5579,Toronto Raptors,2703960.0,Jakob Poeltl, C,2016-2017,0.458874459
+5585,Atlanta Hawks,2500000.0,Malcolm Delaney, G,2016-2017,0.445887446
+5588,Oklahoma City Thunder,2440200.0,Domantas Sabonis, PF,2016-2017,0.439393939
+5595,Atlanta Hawks,2318280.0,Taurean Prince, SF,2016-2017,0.424242424
+5608,Chicago Bulls,2092200.0,Denzel Valentine, SG,2016-2017,0.396103896
+5620,Memphis Grizzlies,1793760.0,Wade Baldwin IV, PG,2016-2017,0.37012987
+5625,Detroit Pistons,1704120.0,Henry Ellenson, PF,2016-2017,0.359307359
+5628,Denver Nuggets,1627320.0,Malik Beasley, SG,2016-2017,0.35281385299999996
+5631,Brooklyn Nets,1562280.0,Caris LeVert, SG,2016-2017,0.346320346
+5637,Atlanta Hawks,1499760.0,DeAndre' Bembry, SF,2016-2017,0.333333333
+5640,Boston Celtics,1450000.0,Demetrius Jackson, PG,2016-2017,0.32683982699999997
+5641,Sacramento Kings,1439800.0,Malachi Richardson, SG,2016-2017,0.324675325
+5647,Memphis Grizzlies,1369299.0,Deyonta Davis, C,2016-2017,0.31168831199999997
+5657,LA Clippers,1273920.0,Brice Johnson, PF,2016-2017,0.29004329
+5663,Toronto Raptors,1196040.0,Pascal Siakam, PF,2016-2017,0.277056277
+5668,Sacramento Kings,1188840.0,Skal Labissiere, PF,2016-2017,0.26623376600000004
+5670,San Antonio Spurs,1180080.0,Dejounte Murray, PG,2016-2017,0.261904762
+5671,Golden State Warriors,1171560.0,Damian Jones, C,2016-2017,0.25974026
+5672,Brooklyn Nets,1074145.0,Isaiah Whitehead, G,2016-2017,0.257575758
+5687,Miami Heat,1015696.0,Willie Reed, C,2016-2017,0.225108225
+5701,Orlando Magic,950000.0,Stephen Zimmerman, C,2016-2017,0.194805195
+5702,Memphis Grizzlies,945000.0,Andrew Harrison, G,2016-2017,0.192640693
+5704,Milwaukee Bucks,925000.0,Malcolm Brogdon, PG,2016-2017,0.188311688
+5705,Phoenix Suns,918369.0,Tyler Ulis, G,2016-2017,0.18614718600000002
+5707,Milwaukee Bucks,874636.0,Xavier Munford, G,2016-2017,0.181818182
+5708,Charlotte Hornets,874636.0,Christian Wood, PF,2016-2017,0.17965368
+5712,Memphis Grizzlies,874636.0,DJ Stephens, SG,2016-2017,0.17099567100000002
+5723,Dallas Mavericks,650000.0,AJ Hammons, C,2016-2017,0.147186147
+5724,Indiana Pacers,650000.0,Georges Niang, SF,2016-2017,0.145021645
+5725,Detroit Pistons,650000.0,Michael Gbinije, SG,2016-2017,0.14285714300000002
+5726,Portland Trail Blazers,600000.0,Jake Layman, SF,2016-2017,0.140692641
+5727,Utah Jazz,600000.0,Joel Bolomboy, PF,2016-2017,0.138528139
+5729,Toronto Raptors,543471.0,E.J. Singler, SF,2016-2017,0.134199134
+5730,Toronto Raptors,543471.0,Drew Crawford, SG,2016-2017,0.13203463199999999
+5731,Cleveland Cavaliers,543471.0,Kay Felder, G,2016-2017,0.12987013
+5732,Toronto Raptors,543471.0,Fred VanVleet, PG,2016-2017,0.12770562800000002
+5733,Toronto Raptors,543471.0,Yanick Moreira, C,2016-2017,0.125541126
+5734,Houston Rockets,543471.0,Kyle Wiltjer, F,2016-2017,0.123376623
+5735,Toronto Raptors,543471.0,Kyle Collinsworth, G,2016-2017,0.12121212099999999
+5736,Toronto Raptors,543471.0,Brady Heslip, SG,2016-2017,0.11904761900000001
+5737,Memphis Grizzlies,543471.0,Vince Hunter, SF,2016-2017,0.116883117
+5738,Charlotte Hornets,543471.0,Andrew Andrews, G,2016-2017,0.114718615
+5739,Charlotte Hornets,543471.0,Marcus Paige, G,2016-2017,0.11255411300000001
+5740,Charlotte Hornets,543471.0,Rasheed Sulaimon, G,2016-2017,0.11038961
+5741,Utah Jazz,543471.0,Isaiah Cousins, G,2016-2017,0.10822510800000001
+5742,New Orleans Pelicans,543471.0,Quincy Ford, SG,2016-2017,0.106060606
+5743,Indiana Pacers,543471.0,Nick Zeisloft, SG,2016-2017,0.103896104
+5746,Washington Wizards,543471.0,Sheldon Mac, SG,2016-2017,0.097402597
+5747,Dallas Mavericks,469943.0,Jonathan Gibson, G,2016-2017,0.095238095
+5753,Houston Rockets,255000.0,Isaiah Taylor, G,2016-2017,0.082251082
+5759,Miami Heat,210995.0,Okaro White, F,2016-2017,0.069264069
+5760,Brooklyn Nets,207798.0,Yogi Ferrell, PG,2016-2017,0.067099567
+5764,Philadelphia 76ers,143860.0,Chasson Randle, PG,2016-2017,0.058441558
+5766,Charlotte Hornets,128623.0,Briante Weber, G,2016-2017,0.05411255400000001
+5771,Philadelphia 76ers,89513.0,Shawn Long, F,2016-2017,0.043290043
+5772,Memphis Grizzlies,83119.0,Wayne Selden, SG,2016-2017,0.041125541
+5773,Memphis Grizzlies,76725.0,Troy Williams, SF,2016-2017,0.038961038999999996
+5776,Charlotte Hornets,67135.0,Mike Tobey, C,2016-2017,0.032467532
+5782,Dallas Mavericks,47953.0,Jarrod Uthoff, SF,2016-2017,0.019480518999999998
+5783,Philadelphia 76ers,35166.0,Alex Poythress, SF,2016-2017,0.017316017
+5784,Milwaukee Bucks,35116.0,Gary Payton II, G,2016-2017,0.015151515
+5785,Dallas Mavericks,31969.0,Pierre Jackson, PG,2016-2017,0.012987013
+5786,Orlando Magic,31969.0,Patricio Garino, SG,2016-2017,0.010822511000000002
+5787,Orlando Magic,31969.0,Marcus Georges-Hunt, F,2016-2017,0.008658009
+5789,Dallas Mavericks,15984.0,Quinn Cook, PG,2016-2017,0.004329004
+5914,Miami Heat,9367200.0,Josh Richardson, SG,2017-2018,0.734341253
+5926,Philadelphia 76ers,8339880.0,Markelle Fultz, PG,2017-2018,0.7084233259999999
+5959,Los Angeles Lakers,6286560.0,Lonzo Ball, PG,2017-2018,0.637149028
+5971,Boston Celtics,5645400.0,Jayson Tatum, SF,2017-2018,0.6112311020000001
+5981,Phoenix Suns,5090040.0,Josh Jackson, SF,2017-2018,0.589632829
+5986,Orlando Magic,4969080.0,Jonathan Isaac, PF,2017-2018,0.578833693
+5991,Sacramento Kings,4609200.0,De'Aaron Fox, PG,2017-2018,0.568034557
+5992,New York Knicks,4544000.0,Ron Baker, SG,2017-2018,0.56587473
+5993,Chicago Bulls,4536120.0,Lauri Markkanen, PF,2017-2018,0.5637149029999999
+6023,Charlotte Hornets,3447480.0,Malik Monk, SG,2017-2018,0.49892008600000004
+6033,Detroit Pistons,3275280.0,Luke Kennard, SG,2017-2018,0.477321814
+6035,Dallas Mavericks,3218280.0,Dennis Smith Jr., PG,2017-2018,0.47300216
+6040,Portland Trail Blazers,3057240.0,Zach Collins, PF,2017-2018,0.46220302399999996
+6046,Miami Heat,2955840.0,Bam Adebayo, C,2017-2018,0.44924406
+6053,Utah Jazz,2621280.0,Donovan Mitchell, SG,2017-2018,0.43412527
+6056,Milwaukee Bucks,2534280.0,D.J. Wilson, PF,2017-2018,0.42764578799999997
+6067,Indiana Pacers,2407560.0,T.J. Leaf, PF,2017-2018,0.403887689
+6068,Sacramento Kings,2365560.0,Justin Jackson, SF,2017-2018,0.40172786200000005
+6072,Atlanta Hawks,2299080.0,John Collins, PF,2017-2018,0.39308855299999995
+6075,Minnesota Timberwolves,2247480.0,Justin Patton, C,2017-2018,0.386609071
+6080,New Orleans Pelicans,2100000.0,Darius Miller, SF,2017-2018,0.375809935
+6084,Toronto Raptors,2034120.0,OG Anunoby, SF,2017-2018,0.367170626
+6085,Brooklyn Nets,2034120.0,Jarrett Allen, C,2017-2018,0.365010799
+6100,Charlotte Hornets,1656092.0,Julyan Stone, G,2017-2018,0.33261339100000004
+6104,Denver Nuggets,1579440.0,Tyler Lydon, PF,2017-2018,0.323974082
+6107,Dallas Mavericks,1577230.0,Jeff Withey, C,2017-2018,0.3174946
+6130,Portland Trail Blazers,1465920.0,Caleb Swanigan, PF,2017-2018,0.267818575
+6133,Los Angeles Lakers,1423560.0,Kyle Kuzma, PF,2017-2018,0.261339093
+6135,San Antonio Spurs,1404600.0,Derrick White, PG,2017-2018,0.257019438
+6136,Los Angeles Lakers,1394520.0,Josh Hart, SG,2017-2018,0.25485961100000004
+6139,Orlando Magic,1378242.0,Khem Birch, C,2017-2018,0.24838013
+6141,Milwaukee Bucks,1378242.0,Sterling Brown, SG,2017-2018,0.244060475
+6142,Charlotte Hornets,1378242.0,Dwayne Bacon, SG,2017-2018,0.241900648
+6143,New York Knicks,1378242.0,Damyean Dotson, SG,2017-2018,0.23974082100000002
+6144,Orlando Magic,1378242.0,Rodney Purvis, G,2017-2018,0.237580994
+6146,Atlanta Hawks,1378242.0,Tyler Dorsey, SG,2017-2018,0.23326133899999998
+6157,Washington Wizards,1312611.0,Daniel Ochefu, PF,2017-2018,0.20950324
+6162,Boston Celtics,1291892.0,Semi Ojeleye, PF,2017-2018,0.198704104
+6164,Sacramento Kings,1184385.0,Frank Mason III, PG,2017-2018,0.194384449
+6165,Boston Celtics,1167333.0,Abdel Nader, SF,2017-2018,0.19222462199999998
+6175,Orlando Magic,980431.0,Arinze Onuaku, PF,2017-2018,0.17062635
+6184,Memphis Grizzlies,950000.0,Ivan Rabb, PF,2017-2018,0.151187905
+6190,San Antonio Spurs,874636.0,Nick Johnson, G,2017-2018,0.138228942
+6193,Miami Heat,874636.0,Keith Benson, PF,2017-2018,0.13174946
+6196,Memphis Grizzlies,815615.0,Xavier Rathan-Mayes, SG,2017-2018,0.125269978
+6197,Memphis Grizzlies,815615.0,Dillon Brooks, SG,2017-2018,0.123110151
+6199,Milwaukee Bucks,815615.0,JeQuan Lewis, PG,2017-2018,0.118790497
+6200,Minnesota Timberwolves,815615.0,Melo Trimble, PG,2017-2018,0.11663067
+6201,Oklahoma City Thunder,815615.0,Rashawn Thomas, PF,2017-2018,0.11447084199999999
+6202,Oklahoma City Thunder,815615.0,Bryce Alford, G,2017-2018,0.112311015
+6203,Charlotte Hornets,815615.0,Luke Petrasek, SF,2017-2018,0.11015118800000001
+6204,Charlotte Hornets,815615.0,T.J. Williams, PG,2017-2018,0.107991361
+6205,Charlotte Hornets,815615.0,Terry Henderson, SG,2017-2018,0.105831533
+6206,Utah Jazz,815615.0,Erik McCree, F,2017-2018,0.103671706
+6207,Utah Jazz,815615.0,Royce O'Neale, SF,2017-2018,0.101511879
+6209,Boston Celtics,815615.0,L.J. Peak, SG,2017-2018,0.097192225
+6210,Atlanta Hawks,815615.0,Jordan Mathews, SG,2017-2018,0.09503239699999999
+6211,Atlanta Hawks,679919.0,Tyler Cavanaugh, PF,2017-2018,0.09287257
+6214,Golden State Warriors,543471.0,Elgin Cook, SF,2017-2018,0.086393089
+6215,Golden State Warriors,543471.0,Scott Wood, SG,2017-2018,0.08423326099999999
+6216,Golden State Warriors,543471.0,Cameron Jones, SG,2017-2018,0.082073434
+6223,New York Knicks,543471.0,J.P. Tokoto, SG,2017-2018,0.06695464400000001
+6225,Detroit Pistons,543471.0,Trey Freeman, PG,2017-2018,0.062634989
+6236,Phoenix Suns,175000.0,Shaquille Harrison, PG,2017-2018,0.03887689
+6240,Houston Rockets,96406.0,Tim Quarterman, G,2017-2018,0.030237581
+6241,Dallas Mavericks,91442.0,Aaron Harrison, G,2017-2018,0.028077754
+6248,Toronto Raptors,55296.0,Nigel Hayes, F,2017-2018,0.012958963
+6252,Los Angeles Lakers,13824.0,Andre Ingram, G,2017-2018,0.004319654
+6253,Orlando Magic,4608.0,Amile Jefferson, PF,2017-2018,0.002159827
+6254,Houston Rockets,4608.0,Aaron Jackson, F,2017-2018,0.0
