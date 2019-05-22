@@ -6,11 +6,11 @@ import pickle
 import sys
 import argparse
 stats = ['rebounds', 'field goals', 'free throws', '3 pointers', 'blocks', 'steals', 'assists', 'points per game', 'total points']
-DATA_DIR = './data/'
+DATA_DIR = '../data/'
 DF_DICT_NAME = 'df_dict_merged.pkl'
 DF_HORIZ_DICT_NAME = 'df_horiz_merged.pkl'
 
-# Class that manages the 
+# Class that manages the ESPN data
 class ESPNDataManager():
     def __init__(self):
         pass
@@ -56,7 +56,7 @@ class ESPNDataManager():
         return df_dict
 
     def getSalaries(self):
-        return pd.read_csv('./data/NBASalaryData03-17.csv', engine='python')
+        return pd.read_csv('../csv/NBASalaryData03-17.csv', engine='python')
         
     def drop_non_NBA_all(self, df_dict, salaries, save=False):
 
@@ -83,16 +83,12 @@ class ESPNDataManager():
                 if 'MPG' in df: 
                     df['TOTAL_MINS'] = df['GP'].astype('float') * df['MPG'].astype('float')
                 df = df.sort_values(by=['PLAYER', 'TOTAL_MINS'], kind='mergesort').drop(columns=['TOTAL_MINS'])
-                df = df.drop_duplicates(subset=["PLAYER"], keep="last")
+                df = df.drop_duplicates(subset=["PLAYER"], keep="first")
                 longdf[stat_id] = df
             except KeyError as k:
                 print("WARNING: duplicate remove on DataFrame with key ", stat_id, "failed. Error message:", k)
         if save: self.save(longdf)
         return longdf
-
-    # equivalent to a horizontal, row-wise conditional merge.
-    def dictMerge(self, df_dict):
-        pass
 
     def save(self, obj):
         f = open(DATA_DIR + DF_DICT_NAME, "wb")
@@ -109,11 +105,14 @@ class ESPNDataManager():
         if verbose: print("Merging players into single row...")
         return temp_dict
 
-    def horizMerge(self, df_dict, save=False):
+    def horizMerge(self, df_dict, save=False, csv=True):
         df_list = list(df_dict.values())
+        df = df_list[0].drop(columns=['RK', 'POST', 'YR'])
         for i in range(len(df_list) - 1):
-            df_list[i+1] = df_list[i].merge(df_list[i+1], on=['PLAYER', 'TEAM', 'GP'], how='outer')
-        return df_list[len(df_list) - 1]
+            df = df.merge(df_list[i+1].drop(columns=['RK', 'POST', 'YR']), on=['PLAYER', 'TEAM'], how='outer')
+        df.to_csv('../csv/out.csv')
+        print("Horizontally merged dataframe stored in csv/out.csv.")
+        return df
 
     def preview(self, df_dict):
         for _, df_list in df_dict.items():
@@ -123,7 +122,7 @@ class ESPNDataManager():
 
 if __name__ == '__main__':
     psr = argparse.ArgumentParser()
-    psr.add_argument("-v", "--verbose", help="suppress previewing all DataFrames", type=int, default=2)
+    psr.add_argument("-v", "--verbose", help="suppress previewing all DataFrames", type=int, default=1)
     args = psr.parse_args()
     if args.verbose > 0: print("Pulling all dataframes...")
     e = ESPNDataManager()

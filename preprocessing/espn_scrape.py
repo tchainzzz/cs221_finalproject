@@ -9,13 +9,13 @@ from pathlib import Path
 
 baseurl = "http://www.espn.com/mens-college-basketball/statistics/player/_/stat/"
 max_rank_tracked = 99
-DATA_DIR = "./data/"
+DATA_DIR = "../data/"
 
 class ESPNScraper():
     def __init__(self):
         chrome_options = Options()
         chrome_options.add_argument('--headless')
-        self.driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="./lib/chromedriver")
+        self.driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="../lib/chromedriver")
         self.soup = None
 
     # Gets links to various stats on a per-year basis. Run once per year/season.

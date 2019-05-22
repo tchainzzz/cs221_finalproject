@@ -12,7 +12,7 @@ def removePositionsFromTable(df):
     return df
 
 def loadDict(pkl):
-    DATA_DIR = './data/'
+    DATA_DIR = '../data/'
     with open(DATA_DIR + pkl, "rb") as f:
         return pickle.load(f)
 
