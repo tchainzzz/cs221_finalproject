@@ -13,6 +13,8 @@ import math
 from sklearn.model_selection import train_test_split 
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.utils import shuffle
+from sklearn.decomposition import PCA
+from fancyimpute import KNN
 
 # our model
 from sklearn import svm
@@ -56,11 +58,13 @@ if __name__ == '__main__':
     bigDF = shuffle(pd.read_csv(args.path_to_dataframe)) # shuffle data as we read it in
     dataX = bigDF[colnamesX] # feature data
     dataY = bigDF[colnamesY] # labels
-    dataX.fillna(dataX.min())
+    print("Imputing missing data with KNN...")
+    dataX = KNN(k=3).fit_transform(dataX)
     print("Feature vector table shape:", dataX.shape)
     print("Label table shape:", dataY.shape)
 
-    dataX.to_csv("./csv/data_x.csv") 
+    # dataX.to_csv("./csv/data_x.csv") 
+    np.savetxt("./csv/data_x.csv", dataX, delimiter=",")
     dataY.to_csv("./csv/data_y.csv")
 
     ################################
@@ -76,7 +80,8 @@ if __name__ == '__main__':
     # Option two: Don't transform the data. This is what this line is.
     #
     ################################
-    newDataX = dataX.values
+    newDataX = dataX
+    newDataX = PCA(n_components=2).fit_transform(newDataX)
 
 
     # dividing X, y into train and test data 
@@ -90,8 +95,8 @@ if __name__ == '__main__':
     # Our actual classifier. Tune these hyperparameters.
     #
     ################################
-    svm_model_linear = OneVsOneClassifier(SVC(max_iter=-1, C=100000.0, gamma=0.5, kernel='rbf',
-        degree=15))
+    svm_model_linear = OneVsRestClassifier(SVC(max_iter=-1, C=100000.0, gamma=0.001, kernel='rbf',
+         class_weight='balanced'))
     svm_model_linear.fit(X_train, y_train) # learn
     svm_predictions = svm_model_linear.predict(X_test) # predict
 
@@ -109,8 +114,8 @@ if __name__ == '__main__':
     if args.quiet: sys.exit(0) # pass in with -q flag to skip graphing
 
     # These are settings for drawing. Do whatever with these.
-    widths = {2 + ix : 9.9 for ix, col in enumerate(colnamesX[2:])}
-    values = {2 + ix : np.median(newDataX[ix]) for ix, col in enumerate(colnamesX[2:])}
+    widths = {2 + ix : 3 for ix, col in enumerate(colnamesX[2:])}
+    values = {2 + ix : np.max(newDataX[ix]) for ix, col in enumerate(colnamesX[2:])}
     figs, ax = plt.subplots(2, 1, figsize=(6, 8))
     print("Features shown in graph:", colnamesX[:2])
     print("Features flattened in graph:",colnamesX[2:])

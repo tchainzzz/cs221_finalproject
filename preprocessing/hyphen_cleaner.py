@@ -2,7 +2,7 @@ import pandas as pd
 import math
 
 CSV_PATH = "../csv/NCAA_NBA_merged.csv"
-SAVE_PATH = "../csv/NBA_Salary_NoDup_NCAAOnly_NoHyphen.csv"
+SAVE_PATH = "../csv/final_data.csv"
 
 class HyphenCleaner():
     def __init__(self):
