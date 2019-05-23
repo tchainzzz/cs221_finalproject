@@ -1,32 +1,48 @@
+# for data
 import csv
-from sklearn import svm
-import numpy as np
+
+# for data management
+import csv
 import pandas as pd
-from sklearn import datasets 
-from sklearn.metrics import confusion_matrix
-from mlxtend.plotting import plot_decision_regions
-from sklearn.multiclass import OneVsOneClassifier, OneVsRestClassifier
+
+# for mathematical operations
+import numpy as np
+import math
+
+# for data preprocessing
 from sklearn.model_selection import train_test_split 
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.utils import shuffle
-import matplotlib.pyplot as plt
+
+# our model
+from sklearn import svm
+from sklearn.multiclass import OneVsOneClassifier, OneVsRestClassifier
 from sklearn.svm import LinearSVC, SVC
-import math
+
+# for data analysis
+from sklearn.metrics import confusion_matrix
+
+# for visualization
+from mlxtend.plotting import plot_decision_regions
+import matplotlib.pyplot as plt
 import seaborn as sn
 
+# for command line interface
 import argparse
 import sys
+
+PATH_NAME = './csv/final_data.csv'
 
 if __name__ == '__main__':
     psr = argparse.ArgumentParser()
     psr.add_argument("-q", "--quiet", help="No plot", action="store_true")
+    psr.add_argument("-p", "--path-to-dataframe", help="Path to dataframe", type=str, default=PATH_NAME)
     args = psr.parse_args()
 
     print("Loading data...")
     colnamesX = ['PPG_y',  'FG%_y', 'APG_y', 'ORPG_y', 'DRPG_y', 'TOPG_y', 'STPG_y', 'BLKPG_y',]
     colnamesY = ['Class']
-    PATH_NAME = './csv/final_data.csv'
-    bigDF = shuffle(pd.read_csv(PATH_NAME))
+    bigDF = shuffle(pd.read_csv(args.path_to_dataframe))
     dataX = bigDF[colnamesX]
     dataY = bigDF[colnamesY]
     print("Feature vector table shape:", dataX.shape)
@@ -35,9 +51,9 @@ if __name__ == '__main__':
     dataX.to_csv("./csv/data_x.csv")
     dataY.to_csv("./csv/data_y.csv")
 
-    scalerX = StandardScaler()
-    newDataX = scalerX.fit_transform(X=dataX.astype('float64'))
-
+    #scalerX = StandardScaler()
+    #newDataX = scalerX.fit_transform(X=dataX.astype('float64'))
+    newDataX = dataX.values
     # dividing X, y into train and test data 
     X_train, X_test, y_train, y_test = train_test_split(newDataX, dataY.values.ravel()) 
 
@@ -62,6 +78,7 @@ if __name__ == '__main__':
     widths = {2 + ix :abs(np.quantile(newDataX[ix], 0.75) - np.quantile(newDataX[ix], 0.25)) / float(2) for ix, col in enumerate(colnamesX[2:])}
     values = {2 + ix : np.median(newDataX[ix]) for ix, col in enumerate(colnamesX[2:])}
     figs, ax = plt.subplots(2, 1, figsize=(6, 8))
+    #figs, ax = plt.subplots(len(colnamesX) + 1, len(colnamesX), figsize=(3, 4))
 
 
     ax[0].set_xlabel(colnamesX[0])
