@@ -20,7 +20,7 @@ def loadDict(pkl):
 def mergeCollegeNBA(college_df, salary_df):
     result = salary_df.copy()
     result['college_ppg'] = pd.Series(np.nan, index=result.index)
-    for i, row in college_df.iterrows():
+    for _, row in college_df.iterrows():
         indices = salary_df[salary_df['player'].str.contains(row['PLAYER'], case=False, regex=False)].index.values
         for nba_index in indices:
             result.at[nba_index, 'college_ppg'] = row['PTS']

@@ -1,4 +1,5 @@
 import pandas as pd
+import math
 
 CSV_PATH = "../csv/NCAA_NBA_merged.csv"
 SAVE_PATH = "../csv/NBA_Salary_NoDup_NCAAOnly_NoHyphen.csv"
@@ -8,6 +9,7 @@ class HyphenCleaner():
         pass
     
     def clean(self, df):
+        df.fillna(0, inplace=True)
         for column in df:
             if column == 'Season': continue
             for ix, row_value in df[column].iteritems():
