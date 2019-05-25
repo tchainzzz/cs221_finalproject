@@ -8,13 +8,14 @@ import pandas as pd
 # for mathematical operations
 import numpy as np
 import math
+import itertools
 
 # for data preprocessing
 from sklearn.model_selection import train_test_split 
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.utils import shuffle
 from sklearn.decomposition import PCA
-from fancyimpute import KNN
+import fancyimpute as fi
 
 # our model
 from sklearn import svm
@@ -40,6 +41,8 @@ if __name__ == '__main__':
     psr = argparse.ArgumentParser()
     psr.add_argument("-q", "--quiet", help="No plot", action="store_true")
     psr.add_argument("-p", "--path-to-dataframe", help="Path to dataframe", type=str, default=PATH_NAME)
+    psr.add_argument("-o", "--output-save", help="Save X and Y dataframes", action="store_true")
+    psr.add_argument("--hyper", help="Hyperparameter Tuning Mode", action="store_true")
     args = psr.parse_args()
 
 
@@ -51,21 +54,24 @@ if __name__ == '__main__':
     #  We set colnamesX to the selected features we want. The first two will be graphed.
     #
     ##########################################
-    colnamesX = ['APG_y', 'RPG_y','PPG_y', 'FG%_y',  'STPG_y', 'BLKPG_y', 'GP_y', 'MPG_y', '2P%_y', '3P%_y']
+    colnamesX = ['PPG_y', 'APG_y', 'RPG_y']
     colnamesY = ['Class'] # class label
+    allCols = colnamesX + colnamesY
 
     # read in data
     bigDF = shuffle(pd.read_csv(args.path_to_dataframe)) # shuffle data as we read it in
-    dataX = bigDF[colnamesX] # feature data
-    dataY = bigDF[colnamesY] # labels
+    focusDF = bigDF[allCols].dropna(thresh=2)
+    dataY = focusDF[colnamesY] # labels
+    dataX = focusDF[colnamesX]
     print("Imputing missing data with KNN...")
-    dataX = KNN(k=3).fit_transform(dataX)
+    dataX = fi.KNN(k=3).fit_transform(dataX)
     print("Feature vector table shape:", dataX.shape)
     print("Label table shape:", dataY.shape)
 
-    # dataX.to_csv("./csv/data_x.csv") 
-    np.savetxt("./csv/data_x.csv", dataX, delimiter=",")
-    dataY.to_csv("./csv/data_y.csv")
+    if args.output_save:
+        # dataX.to_csv("./csv/data_x.csv") 
+        np.savetxt("./csv/data_x.csv", dataX, delimiter=",")
+        dataY.to_csv("./csv/data_y.csv")
 
     ################################
     #
@@ -81,7 +87,6 @@ if __name__ == '__main__':
     #
     ################################
     newDataX = dataX
-    newDataX = PCA(n_components=2).fit_transform(newDataX)
 
 
     # dividing X, y into train and test data 
@@ -95,17 +100,47 @@ if __name__ == '__main__':
     # Our actual classifier. Tune these hyperparameters.
     #
     ################################
-    svm_model_linear = OneVsRestClassifier(SVC(max_iter=-1, C=100000.0, gamma=0.001, kernel='rbf',
-         class_weight='balanced'))
-    svm_model_linear.fit(X_train, y_train) # learn
-    svm_predictions = svm_model_linear.predict(X_test) # predict
+    c_arr = [10**exp for exp in range(-8, 8)]
+    gamma_arr = [10**exp for exp in range(-8, 8)]
+    best_train = 0.0
+    best_test = 0.0
+    best_train_c = None
+    best_test_c = None
+    best_train_gamma = None
+    best_test_gamma = None
+    for c, gamma in itertools.product(c_arr, gamma_arr):
+        if args.hyper: print("Testing hyperparameters C=" + str(c) + ", gamma=" + str(gamma))
+        svm_model_linear = OneVsOneClassifier(SVC(max_iter=-1, C=c, gamma=gamma, kernel='poly',
+            class_weight='balanced', cache_size=1000))
+        svm_model_linear.fit(X_train, y_train) # learn
+        svm_predictions = svm_model_linear.predict(X_test) # predict
 
-    # model accuracy for X_test.  
-    accuracy_train = svm_model_linear.score(X_train, y_train) 
-    accuracy_test = svm_model_linear.score(X_test, y_test) 
-    print("Training accuracy:", accuracy_train)
-    print("Test accuracy:", accuracy_test)
-    print("Params:", svm_model_linear.get_params())
+        # model accuracy for X_test.  
+        accuracy_train = svm_model_linear.score(X_train, y_train) 
+        if accuracy_train > best_train: 
+            best_train = accuracy_train
+            best_train_c = c
+            best_train_gamma = gamma
+        accuracy_test = svm_model_linear.score(X_test, y_test) 
+        if accuracy_test > best_test: 
+            best_test = accuracy_test
+            best_test_c = c
+            best_test_gamma = gamma
+        print("Training accuracy:", accuracy_train)
+        print("Test accuracy:", accuracy_test)
+        if not args.hyper: 
+            break
+        else:
+            print()
+    print("Best:", {"Best training accuracy":best_train, 
+        "Best testing accuracy":best_test, 
+        "Best c in training":best_train_c,
+        "Best gamma in training": best_train_gamma,
+        "Best c in testing": best_test_c,
+        "Best gamma in testing": best_test_gamma})
+
+
+    # print("Params:", svm_model_linear.get_params())
     
     # creating a confusion matrix. We should have a nice diagonal line.
     cm = confusion_matrix(y_test, svm_predictions) 

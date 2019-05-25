@@ -13,6 +13,7 @@ import math
 from sklearn.model_selection import train_test_split 
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.utils import shuffle
+import fancyimpute as fi
 
 # our model
 from sklearn.ensemble import RandomForestClassifier
@@ -31,16 +32,6 @@ import sys
 
 PATH_NAME = './csv/final_data.csv'
 
-class KNNFiller():
-    def __init__(self, n, mode):
-        self.n = n
-        self.mode = mode.lower()
-        if mode not in ['mode', 'median', 'mean']:
-            raise ValueError("Invalid nearest-neighbor statistic.")
-
-    def fill(self, df):
-        pass
-
 
 if __name__ == '__main__':
     # command line setup
@@ -58,23 +49,22 @@ if __name__ == '__main__':
     #  We set colnamesX to the selected features we want. The first two will be graphed.
     #
     ##########################################
-    colnamesX = ['APG_y', 'PPG_y', 'RPG_y', 'FG%_y',  'STPG_y', 'BLKPG_y', 'GP_y', 'MPG_y', '2P%_y', '3P%_y']
+    colnamesX = ['PPG_y', 'APG_y', 'RPG_y']
     colnamesY = ['Class'] # class label
+    allCols = colnamesX + colnamesY
 
     # read in data
     bigDF = shuffle(pd.read_csv(args.path_to_dataframe)) # shuffle data as we read it in
 
-    # dataFiller = KNNFiller(n=5, mode='median')
-    # dataFiller.fill(bigDF)
+    focusDF = bigDF[allCols].dropna(thresh=2)
+    dataY = focusDF[colnamesY] # labels
+    dataX = focusDF[colnamesX]
+    # print("Imputing missing data...")
+    dataX = fi.KNN(k=3).fit_transform(dataX)
 
-    dataX = bigDF[colnamesX] # feature data
-    dataY = bigDF[colnamesY] # labels
-    dataX = dataX.fillna(dataX.median())
     print("Feature vector table shape:", dataX.shape)
     print("Label table shape:", dataY.shape)
 
-    dataX.to_csv("./csv/data_x.csv") 
-    dataY.to_csv("./csv/data_y.csv")
 
     ################################
     #
@@ -88,8 +78,7 @@ if __name__ == '__main__':
     # Option two: Don't transform the data. This is what this line is.
     #
     ################################
-    newDataX = dataX.values
-
+    newDataX = dataX
     # dividing X, y into train and test data 
     X_train, X_test, y_train, y_test = train_test_split(newDataX, dataY.values.ravel()) 
 
@@ -101,7 +90,7 @@ if __name__ == '__main__':
     # Our actual classifier. Tune these hyperparameters.
     #
     ################################
-    clf = RandomForestClassifier(n_estimators=10000, max_features=None, class_weight="balanced")
+    clf = RandomForestClassifier(n_estimators=10, max_features=None, class_weight="balanced")
     clf.fit(X_train, y_train) # learn
     pred = clf.predict(X_test) # predict
 
